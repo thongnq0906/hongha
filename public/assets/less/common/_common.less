@@ -1,0 +1,150 @@
+// --------------------------------------------------
+// COMMONS STYLE
+// --------------------------------------------------
+//
+
+// OVERRIDE: OVERRIDE STYLE
+// -------------------------------------
+.hook-nav-offcanvas(){
+	border-top-style: dotted;
+	border-top-color: @border-light-color;
+	box-shadow: none;
+}
+.hook-nav-header(){
+
+}
+.hook-nav-offcanvas-header() {
+	padding: @nav-header-offcanvas-padding-vertical @nav-header-padding-horizontal;
+	border-top-style: dotted;
+	border-top-color: @border-light-color;
+	box-shadow: none;
+}
+.hook-nav-offcanvas-active(){
+	box-shadow: none;
+}
+.uk-nav-offcanvas .uk-nav-sub {
+    border-top-style: dotted;
+	border-top-color: @border-light-color;
+	box-shadow: none;
+}
+.hook-navbar-nav() {
+	text-shadow: none;
+}
+// COMMON: COMMON STYLE
+// -------------------------------------
+// Font Icons
+@font-face {
+    font-family: 'icomoon';
+    src:    url('@{icon-font-path}/icomoon.eot?bws4yt');
+    src:    url('@{icon-font-path}/icomoon.eot?bws4yt#iefix') format('embedded-opentype'),
+        url('@{icon-font-path}/icomoon.ttf?bws4yt') format('truetype'),
+        url('@{icon-font-path}/icomoon.woff?bws4yt') format('woff'),
+        url('@{icon-font-path}/icomoon.svg?bws4yt#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+    content: "\e916";
+}
+.icon-back:before {
+    content: "\e900";
+}
+.icon-ball:before {
+    content: "\e901";
+}
+.icon-card:before {
+    content: "\e902";
+}
+.icon-chat:before {
+    content: "\e903";
+}
+.icon-choose-active:before {
+    content: "\e904";
+}
+.icon-choose:before {
+    content: "\e905";
+}
+.icon-Close:before {
+    content: "\e906";
+}
+.icon-doidau:before {
+    content: "\e907";
+}
+.icon-dudoan:before {
+    content: "\e908";
+}
+.icon-edit-user:before {
+    content: "\e909";
+}
+.icon-filter:before {
+    content: "\e90a";
+}
+.icon-giaithuong:before {
+    content: "\e90b";
+}
+.icon-Group:before {
+    content: "\e90c";
+}
+.icon-password:before {
+    content: "\e90d";
+}
+.icon-phantich:before {
+    content: "\e90e";
+}
+.icon-share:before {
+    content: "\e90f";
+}
+.icon-thachdau:before {
+    content: "\e910";
+}
+.icon-tintuc:before {
+    content: "\e911";
+}
+.icon-tuongthuat:before {
+    content: "\e912";
+}
+.icon-user:before {
+    content: "\e913";
+}
+.icon-Video:before {
+    content: "\e914";
+}
+.icon-xemTV:before {
+    content: "\e915";
+}
+
+// Genarate Sprite Images
+.ui-icon {
+	display: inline-block;
+	vertical-align: middle;
+}
+.sprites(@spritesheet-sprites);
+
+/* Heading */
+.heading-white {
+	text-align: center;
+	font-size: 24px;
+	color: #fff;
+}
+
+[data-uk-sticky].uk-active {
+	z-index: 980;
+}
+/* HOOK COMMONS STYLE */
+.hook-common-style;
