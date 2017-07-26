@@ -24,7 +24,7 @@
                 </div>
             </li>
             @endforeach
-            <li class="{{{ ((Route::currentRouteName()=='quy-can-hot')?'uk-active':'') }}}"><a href="{{ Route('quy-can-hot-frontend') }}">Quỹ căn hot</a></li>
+            <!-- <li class="{{{ ((Route::currentRouteName()=='quy-can-hot')?'uk-active':'') }}}"><a href="{{ Route('quy-can-hot-frontend') }}">Quỹ căn hot</a></li> -->
 
             <li class="{{{ ((Route::currentRouteName()=='lien-he2')?'uk-active':'') }}}"><a href="{{ Route('lien-he2') }}">liên hệ</a></li>
             </ul>
@@ -68,7 +68,7 @@
                 </div>
             </li>
             @endforeach
-            <li class="{{{ ((Route::currentRouteName()=='quy-can-hot')?'uk-active':'') }}}"><a href="{{ Route('quy-can-hot-frontend') }}">Quỹ căn hot</a></li>
+            <!-- <li class="{{{ ((Route::currentRouteName()=='quy-can-hot')?'uk-active':'') }}}"><a href="{{ Route('quy-can-hot-frontend') }}">Quỹ căn hot</a></li> -->
 
             <li class="{{{ ((Route::currentRouteName()=='lien-he2')?'uk-active':'') }}}"><a href="{{ Route('lien-he2') }}">liên hệ</a></li>
             </ul>
