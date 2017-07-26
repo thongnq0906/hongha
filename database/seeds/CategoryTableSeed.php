@@ -14,19 +14,22 @@ class CategoryTableSeed extends Seeder
         \App\Category::truncate();
     	$category_music = new \App\Category;
     	$category_music->category = 'Music';
-    	$category_music->description = 'All posts about music';
+        $category_music->description = 'All posts about music';
+    	$category_music->parent_id = 0;
     	$category_music->save();
 
 
     	$category_video = new \App\Category;
     	$category_video->category = 'Video';
     	$category_video->description = 'All posts about video';
+        $category_music->parent_id = 1;
     	$category_video->save();
 
 
     	$category_photo = new \App\Category;
     	$category_photo->category = 'Photo';
     	$category_photo->description = 'All posts about photo';
+        $category_music->parent_id = 0;
     	$category_photo->save();
 
     }

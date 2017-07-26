@@ -46,6 +46,7 @@ class PostTableSeed extends Seeder
                 'post' => $faker->sentence,
                 'description' => $faker->paragraph(20),
                 'slug' => str_slug($faker->sentence),
+                'category_id' => rand(1,3)
                 ]);
             $post->slug = str_slug($post->post).'-'.$post->id;
         }

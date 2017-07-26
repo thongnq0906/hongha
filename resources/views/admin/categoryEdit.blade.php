@@ -9,8 +9,12 @@
 			</div>
 			<div class="form-group">
 				<label for="description">Miêu tả chi tiết:</label>
-				<input type="text-area" class="form-control" name="description" required="" value="{{ $category->description }}">
+				<input type="text-area" class="form-control" name="description" value="{{ $category->description }}">
 			</div>
+			<select class="form-control" name="parent_id">
+				<option value="0" selected="selected">Chọn danh mục</option>
+				<?php  menu($data);?>
+			</select>
 			{{ csrf_field() }}
 			<input type="hidden" name="id" value="{{ $id }}">
 			<button type="submit" class="btn btn-default">Cập nhật</button>
