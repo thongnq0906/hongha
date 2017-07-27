@@ -209,6 +209,7 @@
     <script src="<?php echo e(asset('backend/vendors/switchery/dist/switchery.min.js')); ?>"></script>
     <!-- Custom Theme Scripts -->
     <script src="<?php echo e(asset('backend/build/js/custom.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('backend/build/js/common/function.js')); ?>"></script>
     <?php echo $__env->yieldContent('script'); ?>    
     <script type="text/javascript">
       $.ajaxSetup({

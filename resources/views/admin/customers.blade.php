@@ -25,7 +25,7 @@
 				<td>
 					<form action="{{ route('remove-customer') }}" method="post" style="display:inline;">
 						<input type="hidden" name="id" value="{{$customer->id}}">
-						<button class="btn btn-danger" type="submit">Xóa</button>
+						<button class="btn btn-danger" type="submit" onclick="return confirm_delete('are you sure delete')">Xóa</button>
 						{{ csrf_field() }}
 					</form>
 				</td>
