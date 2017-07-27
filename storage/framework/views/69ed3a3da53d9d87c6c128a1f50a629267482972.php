@@ -25,7 +25,7 @@
                 </div>
             </li>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-            <li class="<?php echo e(((Route::currentRouteName()=='quy-can-hot')?'uk-active':'')); ?>"><a href="<?php echo e(Route('quy-can-hot-frontend')); ?>">Quỹ căn hot</a></li>
+            <!-- <li class="<?php echo e(((Route::currentRouteName()=='quy-can-hot')?'uk-active':'')); ?>"><a href="<?php echo e(Route('quy-can-hot-frontend')); ?>">Quỹ căn hot</a></li> -->
 
             <li class="<?php echo e(((Route::currentRouteName()=='lien-he2')?'uk-active':'')); ?>"><a href="<?php echo e(Route('lien-he2')); ?>">liên hệ</a></li>
             </ul>
@@ -70,7 +70,7 @@
                 </div>
             </li>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-            <li class="<?php echo e(((Route::currentRouteName()=='quy-can-hot')?'uk-active':'')); ?>"><a href="<?php echo e(Route('quy-can-hot-frontend')); ?>">Quỹ căn hot</a></li>
+            <!-- <li class="<?php echo e(((Route::currentRouteName()=='quy-can-hot')?'uk-active':'')); ?>"><a href="<?php echo e(Route('quy-can-hot-frontend')); ?>">Quỹ căn hot</a></li> -->
 
             <li class="<?php echo e(((Route::currentRouteName()=='lien-he2')?'uk-active':'')); ?>"><a href="<?php echo e(Route('lien-he2')); ?>">liên hệ</a></li>
             </ul>
