@@ -1,7 +1,7 @@
 @component('mail::message')
-# Vinhomes Riverside The Harmony
+# Hồng Hà Eco City
 
-Đã có khách hàng đăng ký liên hệ VHR2 trên website bietthulienkeharmony.com<br>
+Đã có khách hàng đăng ký liên hệ Hồng Hà EcoCity trên website hongha-ecocity.net<br>
 Thông tin khách hàng : 
 <ul>
 	<li>Tên: {{$customer->name}}</li>

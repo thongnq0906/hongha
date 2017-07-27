@@ -207,6 +207,7 @@
     <script src="{{ asset('backend/vendors/switchery/dist/switchery.min.js') }}"></script>
     <!-- Custom Theme Scripts -->
     <script src="{{ asset('backend/build/js/custom.min.js') }}"></script>
+    <script src="{{ asset('backend/build/js/common/function.js') }}"></script>
     @yield('script')    
     <script type="text/javascript">
       $.ajaxSetup({

@@ -23,22 +23,15 @@
 				<label for="avatar">Ảnh bìa:</label>
 				<input name="avatar" type="file" class="">
 			</div>
-			
-			
-			<div class="form-group">			
-					<label for="category">Danh mục:</label>	
-			
-
-			<?php $__currentLoopData = $categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-
+			<div class="form-group">
+					<label for="category">Danh mục:</label>
 			<div class="checkbox">
-  					
-  						<label><input 
-							type="checkbox" 
-							name="<?php echo e($category->id); ?>" 
-						/><?php echo e($category->category); ?></label>
-					</div>
-			<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                <select class="form-control" name="category_id">
+                	<option>Chọn Danh Mục</option>
+                    <?php  menu($data);?>
+                </select>
+            </div>
+
 
 			</div>
 			<?php echo e(csrf_field()); ?>
@@ -66,58 +59,55 @@
 			</thead>
 			<tbody>
 			<?php $__currentLoopData = $posts; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $post): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-			
-				<tr>
-				
-					
-					<td><?php echo e($post->id); ?></td>
-					<td><a href="<?php echo e($post->getUrl()); ?>"><?php echo e($post->post); ?></a></td>
-					<!-- <td><?php //echo(html_entity_decode($post->description)); ?></td>  -->
-					<td>
-					<img src="<?php echo e($post->avatar); ?>" style="max-width: 100%;"/>				
 
-					</td>	
-					<td><?php echo e($post->getShortDec()); ?></td>	
+				<tr>
+
+
+					<td><?php echo e($post->id); ?></td>
+					<td><a href="<?php echo e($post->getUrl()); ?>"><?php echo $post->post; ?></a></td>
 					<td>
-						<?php $__currentLoopData = $post->category; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $category): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-						<?php echo e($category->category); ?><br/>
-						<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-						
+						<img src="<?php echo e($post->avatar); ?>" style="max-width: 100%;"/>
+
+					</td>
+					<td><?php echo e($post->getShortDec()); ?></td>
+					<td>
+						<?php echo e($post->Cate->category); ?>
+
 					</td>
 					<td>
 						<?php if($post->hot == 1): ?>
-							<span class="label label-success">Đang Hiện</span>
+						<span class="label label-success">Đang Hiện</span>
 						<?php else: ?>
-							<span class="label  label-warning">Đang Ẩn</span>
+						<span class="label  label-warning">Đang Ẩn</span>
 						<?php endif; ?>
 					</td>
 					<td>
 						<?php if($post->news == 1): ?>
-							<span class="label label-success">Đang Hiện</span>
+						<span class="label label-success">Đang Hiện</span>
 						<?php else: ?>
-							<span class="label  label-warning">Đang Ẩn</span>
+						<span class="label  label-warning">Đang Ẩn</span>
 						<?php endif; ?>
 					</td>
 					<td>
 						<?php if($post->is_hidden == 1): ?>
-							<span class="label label-warning">Đang ẩn</span>
+						<span class="label label-warning">Đang ẩn</span>
 						<?php else: ?>
-							<span class="label label-success">Đang hiện</span>
+						<span class="label label-success">Đang hiện</span>
 						<?php endif; ?>
 					</td>
 					<td>
 						<a href="<?php echo e(route('edit-post',['id'=>$post->id])); ?>">
-						<button class="btn btn-default">Sửa</button>
+							<button class="btn btn-default">Sửa</button>
 						</a>
 						<form action="<?php echo e(route('remove-post')); ?>" method="post" style="display:inline;">
-						<input type="hidden" name="id" value="<?php echo e($post->id); ?>">
-						<button class="btn btn-danger" type="submit">Xóa</button>
-						<?php echo e(csrf_field()); ?>
+							<input type="hidden" name="id" value="<?php echo e($post->id); ?>">
+							<button class="btn btn-danger" type="submit" onclick="return confirm_delete('are you sure delete')">Xóa</button>
+							<?php echo e(csrf_field()); ?>
 
 						</form>
-					</td>							
-					
-				
+					</td>
+
+
 				</tr>
 				
 			<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

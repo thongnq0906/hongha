@@ -43,7 +43,7 @@
 						</a>
 						<form action="{{ route('remove-category') }}" method="post" style="display:inline;">
 						<input type="hidden" name="id" value="{{$category->id}}">
-						<button class="btn btn-danger" type="submit">Xóa</button>
+						<button class="btn btn-danger" type="submit" onclick="return confirm_delete('are you sure delete')">Xóa</button>
 						{{ csrf_field() }}
 						</form>
 					</td>							
