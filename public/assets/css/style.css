@@ -9736,6 +9736,10 @@ input {
   text-transform: uppercase;
   padding-top: 10px;
 }
+.theme {
+  margin-left: 22%;
+  margin-bottom: 6%;
+}
 .uk-modal-dialog {
   width: 1000px;
 }
@@ -9795,7 +9799,7 @@ input {
   line-height: 4;
 }
 .uk-navbar-attached .uk-navbar-nav li.uk-active a {
-  background-color: #1b1829;
+  background-color: #0f3b22;
   border-left-color: rgba(149, 30, 32, 0);
   border-right-color: rgba(149, 30, 32, 0);
   border-top-color: rgba(149, 30, 32, 0);
@@ -9803,7 +9807,7 @@ input {
 }
 .uk-navbar-attached .uk-navbar-nav li:hover a,
 .uk-navbar-attached .uk-navbar-nav li a:focus {
-  background-color: #1b1829;
+  background-color: #0f3b22;
   border-left-color: rgba(149, 30, 32, 0);
   border-right-color: rgba(149, 30, 32, 0);
   border-top-color: rgba(149, 30, 32, 0);
@@ -9818,7 +9822,8 @@ input {
   color: #ffffff;
 }
 .uk-navbar-attached .menu-childen ul li:hover a {
-  color: #cf000f;
+  color: #0f3b22;
+  background-color: #ffffff;
 }
 .uk-navbar-content,
 .uk-navbar-brand,
@@ -11070,7 +11075,7 @@ input {
     background-position: 90px -83px;
   }
   .main_vdh .overview {
-    background: #1b1829;
+    background: #0f3b22;
     color: #ffffff;
   }
   .main_vdh .overview .title {
@@ -11096,6 +11101,12 @@ input {
     padding: 0 10px;
     text-align: justify;
   }
+  .main_vdh .overview .over-item .nav {
+    margin-left: 10px;
+  }
+  .main_vdh .overview .over-item .nav .media-left {
+    float: left;
+  }
   .main_vdh .overview .over-item-1 {
     background: url('../images/viber-image7.jpg') no-repeat;
     background-size: 100% 100%;
@@ -11108,7 +11119,7 @@ input {
     padding: 0 10px;
   }
   .main_vdh .shophouse .title {
-    color: #1b1829;
+    color: #0f3b22;
     font: 20px 'Roboto Medium';
     text-transform: uppercase;
     padding: 20px 0;
@@ -11131,7 +11142,7 @@ input {
     text-transform: uppercase;
     padding: 10px 0;
     margin: 0;
-    color: #1b1829;
+    color: #0f3b22;
     font: 20px 'Roboto Medium';
   }
   .main_vdh .shophouse .item .cate {
@@ -11159,7 +11170,7 @@ input {
     font: 15px 'Roboto Medium';
   }
   .main_vdh .product-vhr {
-    background: #1b1829;
+    background: #0f3b22;
     padding-bottom: 50px;
     color: #ffffff;
   }
@@ -11168,6 +11179,7 @@ input {
     font: 18px 'Roboto Medium';
     text-transform: uppercase;
     padding: 20px 0;
+    text-align: center;
   }
   .main_vdh .product-vhr .item {
     padding: 5px;
@@ -11259,14 +11271,18 @@ input {
     padding: 0 10px;
   }
   .main_vdh .policy .title {
-    color: #1b1829;
+    color: #0f3b22;
     font: 18px 'Roboto Medium';
     padding: 20px 0;
   }
   .main_vdh .policy .submit .uk-button {
-    background: #1b1829;
+    background: #0f3b22;
     text-align: center;
     text-transform: uppercase;
+    color: #ffffff;
+  }
+  .main_vdh .policy .submit .uk-button:hover {
+    background-color: #cf000f;
     color: #ffffff;
   }
   .main_vdh .policy ul li a {
@@ -11386,7 +11402,7 @@ input {
   }
   .quy-can-hot .list-tab .menu-tab li:hover,
   .quy-can-hot .list-tab .menu-tab li.uk-active {
-    background-color: #1b1829;
+    background-color: #0f3b22;
   }
   .quy-can-hot .list-tab th {
     background: #fff;
@@ -11408,7 +11424,7 @@ input {
     line-height: 3;
   }
   .footer {
-    background-color: #1b1829;
+    background-color: #0f3b22;
     color: #ffffff;
     min-height: 150px;
     padding-top: 10px;
@@ -11530,7 +11546,7 @@ input {
     padding: 0;
   }
   .extentions .item_extent .title {
-    color: #1b1829;
+    color: #0f3b22;
     font: 25px 'Roboto Medium';
     text-transform: uppercase;
     padding: 20px 0;
@@ -11641,7 +11657,7 @@ input {
     display: none;
   }
   .uk-navbar-attached {
-    background: #1b1829;
+    background: #0f3b22;
   }
   .uk-navbar-attached .hotline-top li {
     width: auto;
@@ -11771,7 +11787,7 @@ input {
     background-position: 236px -190px;
   }
   .main_vdh .overview {
-    background: #1b1829;
+    background: #0f3b22;
     color: #ffffff;
   }
   .main_vdh .overview .title {
@@ -11804,7 +11820,7 @@ input {
     max-height: 400px;
   }
   .main_vdh .position {
-    background: #1b1829;
+    background: #0f3b22;
     color: #ffffff;
     padding-bottom: 50px;
     margin-top: 0;
@@ -11813,6 +11829,10 @@ input {
     color: #ffffff;
     font: 30px 'Roboto Medium';
     text-align: center;
+  }
+  .main_vdh .position .vitri {
+    width: 100%;
+    background-color: #ffffff;
   }
   .main_vdh .position .desc {
     padding: 0 10px;
@@ -11833,7 +11853,7 @@ input {
     padding: 0 10px;
   }
   .main_vdh .shophouse .title {
-    color: #1b1829;
+    color: #0f3b22;
     font: 25px 'Roboto Medium';
     text-transform: uppercase;
     padding: 30px 0;
@@ -11884,7 +11904,7 @@ input {
     font: 15px 'Roboto Medium';
   }
   .main_vdh .product-vhr {
-    background: #1b1829;
+    background: #0f3b22;
     padding-bottom: 50px;
     color: #ffffff;
   }
@@ -11924,10 +11944,10 @@ input {
     padding: 0;
   }
   .main_vdh .policy .title {
-    color: #1b1829;
+    color: #0f3b22;
   }
   .main_vdh .policy .submit .uk-button {
-    background: #1b1829;
+    background: #0f3b22;
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
@@ -12071,7 +12091,7 @@ input {
     font: 13px 'Roboto Regular';
   }
   .footer {
-    background-color: #1b1829;
+    background-color: #0f3b22;
     color: #ffffff;
     min-height: 150px;
     padding-top: 10px;
@@ -12152,7 +12172,7 @@ input {
     padding: 0;
   }
   .extentions .item_extent .title {
-    color: #1b1829;
+    color: #0f3b22;
     font: 25px 'Roboto Medium';
     text-transform: uppercase;
     padding: 10px 0;
@@ -12324,13 +12344,13 @@ input {
     background-position: 206px -201px;
   }
   .main_vdh .title {
-    color: #1b1829;
+    color: #0f3b22;
     font: 30px 'Roboto Medium';
     text-align: center;
     padding: 30px 0;
   }
   .main_vdh .overview {
-    background: #1b1829;
+    background: #0f3b22;
     color: #ffffff;
   }
   .main_vdh .overview .title {
@@ -12359,7 +12379,7 @@ input {
     max-height: 650px;
   }
   .main_vdh .position {
-    background: #1b1829;
+    background: #0f3b22;
     color: #ffffff;
     padding-bottom: 20px;
     margin-top: 0;
@@ -12374,6 +12394,7 @@ input {
   }
   .main_vdh .position .img_position img {
     width: 100%;
+    background-color: #ffffff;
   }
   .main_vdh .position .desc {
     padding: 0 0 20px 0;
@@ -12386,6 +12407,10 @@ input {
   .main_vdh .position .over-item ul li {
     line-height: 2;
   }
+  .main_vdh .position .over-item .theme {
+    margin-left: 22%;
+    margin-bottom: 6%;
+  }
   .main_vdh .position .line-bottom {
     background-position: 126px -113px;
     width: 100%;
@@ -12395,7 +12420,10 @@ input {
     margin: auto;
   }
   .main_vdh .shophouse .title {
-    color: #1b1829;
+    color: #0f3b22;
+  }
+  .main_vdh .shophouse .theme {
+    margin-top: -6%;
   }
   .main_vdh .shophouse .item a {
     position: relative;
@@ -12439,7 +12467,7 @@ input {
     font: 15px 'Roboto Medium';
   }
   .main_vdh .product-vhr {
-    background: #1b1829;
+    background: #0f3b22;
     padding-bottom: 50px;
     color: #ffffff;
   }
@@ -12476,9 +12504,13 @@ input {
     transform: scale(1.1);
   }
   .main_vdh .policy .submit .uk-button {
-    background: #1b1829;
+    background: #0f3b22;
     text-align: center;
     text-transform: uppercase;
+    color: #ffffff;
+  }
+  .main_vdh .policy .submit .uk-button:hover {
+    background-color: #cf000f;
     color: #ffffff;
   }
   .main_vdh .policy ul li a {
@@ -12546,7 +12578,7 @@ input {
     padding: 0;
   }
   .extentions .item_extent .title {
-    color: #1b1829;
+    color: #0f3b22;
     font: 25px 'Roboto Medium';
     text-transform: uppercase;
     padding: 30px 0;
@@ -12557,7 +12589,7 @@ input {
   }
   .extentions .item_extent ul li {
     float: left;
-    width: 32.5%;
+    width: 24%;
     margin: 4px;
     height: 200px;
   }
@@ -13037,7 +13069,7 @@ input {
     padding: 5px 0 5px 0;
   }
   .footer {
-    background-color: #1b1829;
+    background-color: #0f3b22;
     color: #ffffff;
     min-height: 150px;
     padding-top: 10px;

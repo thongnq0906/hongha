@@ -4,11 +4,11 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="vinhomes riverside giai đoạn 2, vinhomes the harmony, vinhomes riverside the harmony, vinhomes riverside 2.">
-	<meta name="description" content="Vinhomes Riverside là một trong những khu đô thị đẳng cấp đầu tiên ở Việt Nam, sở hữu mô hình khu biệt thự bên sông rộng lớn, tọa lạc tại quận Long Biên.">
+	<meta name="keywords" content="Dự án Chung Cư Hồng Hà Eco City do Chủ đầu tư Công ty Cổ phần Tứ Hiệp Hồng Hà phụ trách mang đến chốn an cư lý tưởng cho cư dân.">
+	<meta name="description" content="Chung Cư Hồng Hà Eco City, eco city tứ hiệp, chung cư tứ hiệp, chung cư hồng hà tứ hiệp, chung cư eco city, chung cư hồng hà, bán chung cư tứ hiệp, dự án hồng hà eco city.">
 	<title><?php echo $__env->yieldContent('title'); ?></title>
-	<link rel="shortcut icon" href="assets/ico/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon.png">
+	<link rel="shortcut icon" href="samples/favicon.png" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="samples/favicon.png">
 
 	<!-- Bootstrap CSS -->
 	<link href="<?php echo e(asset('assets/css/style.css')); ?>" rel="stylesheet">
@@ -29,54 +29,13 @@
 
 		<!-- custom javascript -->
 		<script type="text/javascript" src="<?php echo e(asset('assets/js/custom.js')); ?>"></script>
-		<!-- Facebook Pixel Code -->
-		<script>
-		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-		n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-		n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-		t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-		document,'script','https://connect.facebook.net/en_US/fbevents.js');
-		fbq('init', '266414553823293'); // Insert your pixel ID here.
-		fbq('track', 'PageView');
-		</script>
-		<noscript><img height="1" width="1" style="display:none"
-		src="https://www.facebook.com/tr?id=266414553823293&ev=PageView&noscript=1"
-		/></noscript>
-		<!-- DO NOT MODIFY -->
-		<!-- End Facebook Pixel Code -->
-		<!-- Google Code dành cho Thẻ tiếp thị lại -->
 		
 
-		<!-- analytics -->
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', 'UA-91534416-1', 'auto');
-		  ga('send', 'pageview');
-
-		</script>
 		
 </head>
 <body>
 		<div class="retargeting" style="display: none">
-			<!-- Google Code dành cho Thẻ tiếp thị lại -->
-			<script type="text/javascript">
-			/* <![CDATA[ */
-			var google_conversion_id = 850809964;
-			var google_custom_params = window.google_tag_params;
-			var google_remarketing_only = true;
-			/* ]]> */
-			</script>
-			<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-			</script>
-			<noscript>
-			<div style="display:inline;">
-			<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/850809964/?guid=ON&amp;script=0"/>
-			</div>
-			</noscript>
+			
 		</div>
 	<?php echo $__env->make('frontend.layouts.menu', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 	<main id="main">
@@ -122,37 +81,10 @@
         ].join('');
 	$(".form-detail").html($contactFormHtml);
 </script>
-<script>
-  (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
-    t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
-  })(window, document, '_gscq','script','//widgets.getsitecontrol.com/86351/script.js');
-</script>
 <!-- uhchat -->
 <div class="uhchat" style="display: none;">
 <script src="https://uhchat.net/code.php?f=e2bf53"></script>
 </div>
 <!-- end uhchat -->
  </body>
- <!-- ADX -->
- <script type="text/javascript" src="//media1.admicro.vn/cpa/admicro-core.min.js"></script>
-<script type="text/javascript">
-window.admicro_cpa_q = window.admicro_cpa_q || [];
-window.admicro_cpa_q.push({event: "retargeting", id: 4309});
-</script>
-<!-- END ADX -->
-<!-- Fire Base -->
-<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBQ_qZ_5NqPRCkbHQC6DGoHyvdaRHwS07Q",
-    authDomain: "vhr2-c0991.firebaseapp.com",
-    databaseURL: "https://vhr2-c0991.firebaseio.com",
-    projectId: "vhr2-c0991",
-    storageBucket: "vhr2-c0991.appspot.com",
-    messagingSenderId: "609771797462"
-  };
-  firebase.initializeApp(config);
-</script>
-<!-- END FIRE BASE -->
 </html>

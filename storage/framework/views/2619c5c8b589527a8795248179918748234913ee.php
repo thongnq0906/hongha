@@ -1,33 +1,31 @@
 <?php $__env->startSection('title'); ?>
-Vinhomes Riverside The Harmony- Riverside giai đoạn 2 đẳng cấp
+Mở bán chung Cư Hồng Hà Eco City- Tứ Hiệp, Thanh Trì 
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('main'); ?>
 	
-	<!-- Desktop -->
-	<!-- slide show -->
 		<div class="slideshow">
 			<div class="uk-slidenav-position" data-uk-slideshow="{kenburns:true, autoplay:true}">
 	            <ul class="uk-slideshow uk-overlay-active" data-uk-slideshow="{kenburns:true}">
 	                <li data-slideshow-slide="img">
-	                	<img src="samples/slide/ho-dieu-hoa.jpg">
+	                	<img src="<?php echo e(asset('samples/slide/untitled1.png')); ?>">
 						<div class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-left">
-                            <h1>Vinhomes Riverside - The Harmony</h1>
-                            <p>Riêng Một Đẳng Cấp Sống</p>
+                            <h1>Bể bơi trong nhà</h1>
+                            <!--<p>Con đường danh vọng và niềm tin chiến thắng</p>-->
                         </div>
 	                <li data-slideshow-slide="img">
-	                	<img src="samples/slide/tieu-khu-nguyet-que.jpg">
+	                	<img src="<?php echo e(asset('samples/slide/section-bg-home.jpg')); ?>">
 	                	<div class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-left">
-                            <h1>Tiểu khu nguyệt quế</h1>
-                            <p>Phong Cách Hy Lạp</p>
+                            <h1>Tổng quan</h1>
+                            <!--<p>Con đường của vẻ đẹp kiêu sa, sang quý, của hoàn mỹ, vẹn toàn.</p>-->
                         </div>
                 	</li>
-                	<li data-slideshow-slide="img">
-	                	<img src="samples/slide/tieu-khu-huong-duong.jpg">
-	                	<div class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-left">
-                            <h1>Tiểu khu hướng dương</h1>
-                            <p>Phong Cách Đông Dương</p>
+                    <li data-slideshow-slide="img">
+                        <img src="<?php echo e(asset('samples/slide/untitled.png')); ?>">
+                        <div class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-left">
+                            <h1>Không gian xanh</h1>
+                            <!--<p>Con đường của vẻ đẹp kiêu sa, sang quý, của hoàn mỹ, vẹn toàn.</p>-->
                         </div>
-                	</li>
+                    </li>
 	            </ul>
 	            <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
 			    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
@@ -38,36 +36,79 @@ Vinhomes Riverside The Harmony- Riverside giai đoạn 2 đẳng cấp
 		    </ul>
 	        </div>
 		</div>
-		<!-- modal -->
-			<!-- Mobile -->
+
 		<div class="overview uk-grid ">
 			<div class="over-item over-item-1 uk-width-large-1-2 uk-width-medium-1-2 uk-text-left">
 				<div class="title"> Video dự án</div>
 				<div class="videos">
-				<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fqueenland.vn%2Fvideos%2F622253901293780%2F&show_text=0" width="100%" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-					
+					<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fqueenland.vn%2Fvideos%2F668422243343612%2F&show_text=0" width="100%" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
 				</div>
 			</div>
 			<div class="over-item uk-width-large-1-2 uk-width-medium-1-2">
 				<div class="uk-panel">
-					<h2>
-						<div class="title uk-text-center"> Tổng quan dự án</div>
-					</h2>
+					<div class="title uk-text-center"> Tổng quan dự án	 </div>
 					<div class="desc ">
-						<p>Vinhomes Riverside – The Harmony là phân khu mới nhất thuộc tổng thể khu đô thị sinh thái đẳng cấp duy nhất giữa lòng Hà Nội - Vinhomes Riverside. Không chỉ kế thừa giá trị cốt lõi của tổng thể khu đô thị Vinhomes Riverside, Vinhomes Riverside The Harmony còn sở hữu các phong cách kiến trúc đa dạng và hệ thống tiện ích vượt trội, hứa hẹn sẽ trở thành nơi an cư lý tưởng của những chủ nhân tinh hoa.</p>
+						<p>Vị trí: Nằm trên địa bàn xã Tứ Hiệp, huyện Thanh Trì, thành phố Hà Nội
+							Gồm 3 tổ hợp: Toà nhà thương mại , Nhà ở xã hội , Trung tâm thương mại
+							Tiện ích dự án: Hồ bơi 500 m², nhà trẻ, phòng gym, siêu thị mini, nhà hàng, cà phê sân vườn…</p>
 					</div>
 					<div class="nav">
-						<ul class=""> 
-						    <li> Tổng diện tích dự án: 97,6ha</li>
-						    <li> Diện tích công viên điều hòa: rộng 12.4ha</li>
-						    <li> Mật độ xây dựng: 21%</li>
-						    <li> 71,4ha không gian xanh cùng 18.7km kênh đào uốn lượn</li>
-						    <li> Diện tích các lô biệt thự: 84.9m2-500m2</li>
-						    <li> Hình thức sở hữu: SỔ ĐỎ</li>
-						    <li> Loại hình: Biệt thự song lập, đơn lập, tứ lập, liền kề, nhà vườn, nhà phố</li>
-						    <li>Tiểu Khu: Phong Lan, Tulip, Hướng Dương, Nguyệt Quế</li>
-						    <li> Dự kiến bàn giao: Vinhomes Riverside The Harmony: từ tháng 9/2017</li>
-					    </ul>
+						<div class=" uk-grid">
+							<div class="uk-width-1-2 uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 media-heading">
+								<div class="uk-card uk-card-default uk-card-body">
+									<a class="media-left uk-width-1-6" href="#" >
+										<img src="<?php echo e(asset('samples/icon-1.png')); ?>">
+									</a>
+									<div class="uk-width-5-6">Diện tích dự án:</div>
+									16,7 ha
+								</div>
+							</div>
+							<div class="uk-width-1-2 uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 media-heading">
+								<div class="uk-card uk-card-default uk-card-body">
+									<a class="media-left uk-width-1-6" href="#" >
+										<img src="<?php echo e(asset('samples/icon-1.png')); ?>">
+									</a>
+									<div class="uk-width-5-6">Mật độ xây dựng:</div>
+									30 %
+								</div>
+							</div>
+						</div>
+
+						<div class=" uk-grid">
+							<div class="uk-width-1-2 uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 media-heading">
+								<div class="uk-card uk-card-default uk-card-body">
+									<a class="media-left uk-width-1-6" href="#">
+										<img src="<?php echo e(asset('samples/icon-1.png')); ?>">
+									</a>
+									<div class="uk-width-1-1">Hạ tầng giao thông & Không gian:</div>
+									70%
+								</div>
+							</div>
+							<div class="uk-width-1-2 uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 media-heading">
+								<div class="uk-card uk-card-default uk-card-body">
+									<a class="media-left uk-width-1-6" href="#">
+										<img src="<?php echo e(asset('samples/icon-1.png')); ?>">
+									</a>
+									<div class="uk-width-1-1">Số Block & Tầng cao:</div>
+									17 Tòa nhà từ 10 tầng đến 34 tầng
+								</div>
+							</div>
+						</div>
+						<div class=" uk-grid">
+							<div class="uk-width-1-2 uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 media-heading">
+								<div class="uk-card uk-card-default uk-card-body">
+									<a class="media-left uk-width-1-6" href="#">
+										<img src="<?php echo e(asset('samples/icon-1.png')); ?>">
+									</a>
+									<div class="uk-width-1-1">Số căn hộ:</div>
+									3283 Căn
+								</div>
+							</div>
+							<div class="uk-width-1-2 uk-width-large-1-2 media-heading">
+								<div class="uk-card uk-card-default uk-card-body">
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -76,176 +117,123 @@ Vinhomes Riverside The Harmony- Riverside giai đoạn 2 đẳng cấp
 		<div class="position uk-grid ">
 			<div class="over-item uk-width-large-1-2 uk-width-medium-1-2 uk-float-left">
 				<div class="uk-panel">
-					<h2>
-						<div class="title uk-text-center"> Vị trí vàng </div>
-					</h2>
-					<div class="desc " style="text-align: justify; padding: 0 10px;" >
-						Vinhomes Riverside - The Harmony được xây dựng trên địa giới của 2 phường trung tâm quận Long Biên: Việt Hưng, Phúc Đồng. Từ dự án, cư dân có thể kết nối linh hoạt với trung tâm Hà Nội cũng như di chuyển đến các tỉnh lân cận như, Hải Dương, Hải Phòng, Hưng Yên, Bắc Ninh… Bằng hệ thống giao thông đường bộ, đường cao tốc trên cao hiện đại.
+					<div class="title uk-text-center"> VỊ TRÍ CHIẾN LƯỢC</div>
+					<div class="uk-text-center"> KẾT NỐI ĐA CHIỀU</div>
+					<div class="desc uk-text-center ">
+						Khu đô thị Hồng Hà Eco City cách trung tâm thủ đô Hà Nội 8Km về phía Nam, có vị trí đắc địa về
+						Phong thủy và Môi trường sống
 					</div>
-					<div class="nav">
-						<ul class=""> 
-						    <li> Cách Hồ Hoàn Kiếm chưa đầy 6km</li>
-						    <li> Cách siêu thị Aeon Mall 1km</li>
-						    <li> Cách công viên IT PARK 800m</li>
-					    </ul>
+					<div class="desc uk-text-center ">
+						Khu đô thị Hồng Hà Eco City cách Công viên Yên Sở, khoảng 300m về phía Đông Bắc nơi có diện tích trên 3.000.000m2 Hồ nước và Cây xanh; Cách Đầm Trì khoảng 500m về phía Đông, có diện tích gần 1.000.000m2 mặt nước.
 					</div>
+					<div class="desc uk-text-center ">
+						Liền kề dòng Sông huyết mạch của Hà Nội đem lại sự lưu thông dòng chảy và tạo nên đô thị Hồng Hà
+						Eco City nằm ở vị trí đắc địa luôn luôn cân bằng dòng nước và không bao giờ bị ngập lụt.
+						
+					</div>
+
 				</div>
 			</div>
 			<div class="img_position uk-width-large-1-2 uk-width-medium-1-2 uk-float-right">
 				<div class="videos">
-					<img src="http://vinhomesriverside.herokuapp.com/samples/vitri.png" alt="">
+					<img src="<?php echo e(asset('assets/images/section-bg-location.png')); ?>" alt="" class="vitri">
 				</div>
 			</div>
-			
+
 		</div>
 		<!-- shophouse VHR2 -->
 		<div class="shophouse uk-container uk-conatiner-center uk-text-center">
 			<div class="">
-				<h2>
-					<div class="title uk-text-center"> Vinhomes Riverside – The Harmony</div>
-				</h2>
-				<div class="desc uk-text-center">
-					Vinhomes Riverside – The Harmony là phân khu mới phát triển thuộc Vinhomes Riverside, tọa lạc tại vị trí đắt giá, vừa đủ gần để bước chân là xuống phố, vừa đủ cách biệt để cư dân thừa hưởng sự yên bình.
-				</div>
+				<div class="title uk-text-center">  Hồng hà eco city</div>
 				<div class="shophouse-item uk-grid">
-					<div class="item uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
-						<a href="<?php echo e(url('/')); ?>/tin-tuc/tieu-khu-huong-duong-phong-cach-dong-duong.html" title="Tiểu Khu Hướng Dương">
-							<img src="<?php echo e(asset('samples/tieu-khu/tieu-khu-huong-duong.jpg')); ?>" alt="Tiểu Khu hướng dương">
+					<div class="item uk-width-large-1-3 uk-width-medium-1-1 uk-width-small-1-1">
+						<a href="#" title="">
+							<img src="<?php echo e(asset('samples/tieu-khu/1495161667-project-1.jpg')); ?>">
 						</a>
-						<a href="<?php echo e(url('/')); ?>/tin-tuc/tieu-khu-huong-duong-phong-cach-dong-duong.html" title="Tiểu Khu hướng dương">
-							<h3>Tiểu Khu hướng dương</h3>
+						<a href="#" title="">
+							<h3>Nhà ở xã hội</h3>
 						</a>
+						<div class="cate">
+							Dự án nhà ở xã hội được thiết kế đồng bộ hạ tầng kỹ thuật và xã hội. Tòa nhà được thiết kế đồng nhất với thiết kế chung của khu đô thị, không có sự khác biệt nhà ở xã hội và nhà thương mại.
+						</div>
 					</div>
-					<div class="item uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
-						<a href="<?php echo e(url('/')); ?>/tin-tuc/tieu-khu-phong-lan-phong-cach-phap.html" title="Tiểu Khu Phong Lan">
-							<img src="<?php echo e(asset('samples/tieu-khu/tieu-khu-phong-lan.png')); ?>" alt="Tiểu Khu Phong Lan">
+					<div class="item uk-width-large-1-3 uk-width-medium-1-1 uk-width-small-1-1">
+						<a href="#" title="">
+							<img src="<?php echo e(asset('samples/tieu-khu/1495161674-project-2.jpg')); ?>">
 						</a>
-						<a href="<?php echo e(url('/')); ?>/tin-tuc/tieu-khu-phong-lan-phong-cach-phap.html" title="Tiểu Khu Phong Lan">
-							<h3>Tiểu Khu Phong Lan</h3>
+						<a href="#" title="">
+							<h3>Tòa nhà thương mại</h3>
 						</a>
+						<div class="cate">
+							Tổng thể dự án vẫn lấy thiên nhiên làm trọng điểm,làm lá phổi sống, tạo năng lượng xanh cho toàn bộ khu đô thị với mật độ cây xanh chiếm 70% tổng diện tích. Bắt nguồn từ ý tưởng xây dựng hệ sinh thái tự nhiên, m&oci..
+						</div>
 					</div>
-					<div class="item uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
-						<a href="<?php echo e(url('/')); ?>/tin-tuc/tieu-khu-nguyet-que-phong-cach-hy-lap.html" title="Tiểu Khu Nguyệt Quế">
-							<img src="<?php echo e(asset('samples/tieu-khu/tieu-khu-nguyet-que.jpg')); ?>" alt="Tiểu Khu Nguyệt Quế">
+					<div class="item uk-width-large-1-3 uk-width-medium-1-1 uk-width-small-1-1">
+						<a href="#" title="">
+							<img src="<?php echo e(asset('samples/tieu-khu/trungcu.jpg')); ?>"/>
 						</a>
-						<a href="<?php echo e(url('/')); ?>/tin-tuc/tieu-khu-nguyet-que-phong-cach-hy-lap.html" title="Tiểu Khu Nguyệt Quế">
-							<h3>Tiểu KHU NGUYỆT QUẾ</h3>
+						<a href="#" title="">
+							<h3>Trung tâm thương mại</h3>
 						</a>
-					</div>
-					<div class="item uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
-						<a href="<?php echo e(url('/')); ?>/tin-tuc/tieu-khu-tulip-phong-cach-y.html" title="Tiểu Khu Tulip">
-							<img src="<?php echo e(asset('samples/tieu-khu/tieu-khu-tulip.jpg')); ?>" alt="Tiểu Khu Tulip">
-						</a>
-						<a href="<?php echo e(url('/')); ?>/tin-tuc/tieu-khu-tulip-phong-cach-y.html" title="Tiểu Khu Tulip">
-							<h3>Tiểu Khu Tulip</h3>
-						</a>
+						<div class="cate">
+							Từ xa xưa đến nay, cuộc sống của loài người luôn gắn bó và không thể tách rời khỏi thiên nhiên. Thế nên, bất kể ai khi đứng trước các yếu tố tạo nên thiên nhiên (nước, cỏ cây hoa lá, …)
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="extentions matbang uk-container uk-container-center">
-				<div class="item_extent">
-					<ul class="uk-nav">
-						<li><a href="http://vinhomesriverside.herokuapp.com/samples/can-ho-mau/lien-ke-hylap-nguyetque.jpg" title="Mẫu liền kề Hy Lạp" data-uk-lightbox="{group:'group2'}">
-							<img src="http://vinhomesriverside.herokuapp.com/samples/can-ho-mau/lien-ke-hylap-nguyetque.jpg" alt="Mẫu liền kề Hy Lạp">
-							<div class="light-text"><span>Mẫu liền kề Hy Lạp</span></div>
-						</a></li>
-						<li><a href="http://vinhomesriverside.herokuapp.com/samples/can-ho-mau/nhapho-phap-phonglan.jpg" title="Mẫu nhà phố - Pháp" data-lightbox-type="image" data-uk-lightbox="{group:'group2'}">
-							<img src="http://vinhomesriverside.herokuapp.com/samples/can-ho-mau/nhapho-phap-phonglan.jpg" alt="Mẫu nhà phố - Pháp">
-							<div class="light-text"><span>Mẫu nhà phố - Pháp</span></div>
-						</a></li>
-						<li><a href="http://vinhomesriverside.herokuapp.com/samples/can-ho-mau/nhavuon-hylap-nguyetque.jpg" title="Mẫu nhà vườn - Hy Lạp" data-lightbox-type="image" data-uk-lightbox="{group:'group2'}">
-							<img src="http://vinhomesriverside.herokuapp.com/samples/can-ho-mau/nhavuon-hylap-nguyetque.jpg" alt="Mẫu nhà vườn - Hy Lạp">
-							<div class="light-text"><span>Mẫu nhà vườn - Hy Lạp</span></div>
-						</a></li>
-						<li><a href="http://vinhomesriverside.herokuapp.com/samples/can-ho-mau/nhavuon-phap-phonglan.jpg" title="Mẫu nhà vườn - Pháp" data-lightbox-type="image" data-uk-lightbox="{group:'group2'}">
-							<img src="http://vinhomesriverside.herokuapp.com/samples/can-ho-mau/nhavuon-phap-phonglan.jpg" alt="Mẫu nhà vườn - Pháp">
-							<div class="light-text"><span>Mẫu nhà vườn - Pháp</span></div>
-						</a></li>
-						<li><a href="http://vinhomesriverside.herokuapp.com/samples/can-ho-mau/song-lap-dongduong-duongduong.jpg" title="Mẫu song lập - Đông Dương" data-lightbox-type="image" data-uk-lightbox="{group:'group2'}">
-							<img src="http://vinhomesriverside.herokuapp.com/samples/can-ho-mau/song-lap-dongduong-duongduong.jpg" alt="Mẫu song lập - Đông Dương">
-							<div class="light-text"><span>Mẫu song lập - Đông Dương</span></div>
-						</a></li>
-						<li><a href="http://vinhomesriverside.herokuapp.com/samples/can-ho-mau/tulap-hylap-nguyetque.jpg" title="Mẫu tứ lập - Hy Lạp" data-lightbox-type="image" data-uk-lightbox="{group:'group2'}">
-							<img src="http://vinhomesriverside.herokuapp.com/samples/can-ho-mau/tulap-hylap-nguyetque.jpg" alt="Mẫu tứ lập - Hy Lạp">
-							<div class="light-text"><span>Mẫu tứ lập - Hy Lạp</span></div>
-						</a></li>
-					</ul>
-				</div>
-			</div>
 		<!-- sản phẩm paragon -->
 			<div class="product-vhr ">
-				<div class="uk-container uk-container-center" style="padding: 0;">
-					<h2>
-						<div class="title uk-text-center">loại hình tại Vinhomes Riverside – The Harmony</div>
-					</h2>
-					<div class="item-para uk-grid" style="margin: 0;">
+				<div class="uk-container uk-container-center">
+					<div class="title">TIN TỨC & SỰ KIỆN</div>
+					<div class="item-para uk-grid">
 						<div class="item uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
-							<div class="title">Biệt thự đơn lập</div>
-							<a href="<?php echo e(url('/')); ?>/tin-tuc/don-lap-vinhomes-riverside-the-harmony-moi-truong-song-biet-lap-dang-cap-121.html" title="Biệt thự đơn lập"><img src="<?php echo e(asset('samples/san-pham/don-lap-phap.jpg')); ?>" alt="Biệt thự đơn lập"></a>
-							<!-- <ul class="cate">
-								<li>Diện tích đất trung bình: 300m2-368m2</li>
-								<li>Tổng diện tích sàn xây dựng: 350m2-500m2 </li>
-							</ul> -->
+							<a href="#" title="Victory Tower"><img src="<?php echo e(asset('samples/san-pham/1495858614-30-ty-dong-1425646.jpg')); ?>"></a>
+							<div class="cate">
+								Gói 30 nghìn tỷ giải ngân sau ngày 31/12/2016 sẽ chịu lãi xuất thả nổi
+							</div>
 						</div>
 						<div class="item uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
-							<div class="title">biệt thự song lập</div>
-							<a href="<?php echo e(url('/')); ?>/tin-tuc/biet-thu-song-lap-xung-tam-dang-cap-song.html" title="biệt thự song lập" ><img src="<?php echo e(asset('samples/san-pham/song-lap-huong-duong.jpg')); ?>" alt="biệt thự song lập"></a>
-							<!-- <ul class="cate">
-								<li>Diện tích đất: 207m2 - 213m2 </li>
-								<li>Diện tích xây dựng: 400m2 - 440m2</li>
-							</ul> -->
+							<a href="#" title="Victory Tower"><img src="<?php echo e(asset('samples/san-pham/1500259951-so-do.jpg')); ?>"></a>
+							<div class="cate">
+								Quy định những trường hợp không được đăng ký thế chấp “sổ đỏ”
+							</div>
 						</div>
 						<div class="item uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
-							<div class="title">Biệt thự tứ lập</div>
-							<a href="<?php echo e(url('/')); ?>/tin-tuc/biet-thu-tu-lap-vinhomes-riverside-the-harmony.html" title="Biệt thự tứ lập"><img src="<?php echo e(asset('samples/san-pham/tu-lap-hy-lap-v7.jpg')); ?>" alt="Biệt thự tứ lập"></a>
-							<!-- <ul class="cate">
-								<li>Diện tích đất: 180m2 </li>
-								<li>Diện tích xây dựng: 350m2</li>
-							</ul> -->
+							<a href="#" title="Victory Tower"><img src="<?php echo e(asset('samples/san-pham/1500260153-vanh-dai.jpg')); ?>"></a>
+							<div class="cate">
+								Chỉ giới vành đai 3,5 đoạn Quốc lộ 6 đến cầu Ngọc Hồi
+							</div>
 						</div>
-						<div class="item uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
-							<div class="title">Biệt thự liền kề</div>
-							<a href="<?php echo e(url('/')); ?>/tin-tuc/biet-thu-lien-ke-ben-ho-vinhomes-riverside-the-harmony.html" title="Biệt thự liền kề"><img src="<?php echo e(asset('samples/san-pham/lien-ke-phap-2.jpg')); ?>" alt="Biệt thự liền kề"></a>
-							<!-- <ul class="cate">
-								<li>Diện tích đất: 90m2 - 96m2</li>
-								<li>Diện tích xây dựng: 220m2</li>
-							</ul> -->
-						</div>
-
+                        <div class="item uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
+                            <a href="#" title="Victory Tower"><img src="<?php echo e(asset('samples/san-pham/1500437502-img-3350-fileminimizer.jpg')); ?>"></a>
+                            <div class="cate">
+                                Giải Bóng Đá Cúp Tứ Hùng 2017
+                            </div>
+                        </div>
 					</div>
 				</div>
 			</div>
 			<!-- tiện ích tại paragon -->
 			<div class="extentions uk-container uk-container-center">
 				<div class="item_extent">
-					<h2>
-					<div class="title">Tiện ích đẳng cấp 5 sao</div>
-					</h2>
+				<div class="title">Tiện ích đẳng cấp 5 sao</div>
 					<ul class="uk-nav">
-						<li><a href="http://vinhomesriverside.herokuapp.com/samples/tien-ich/be-boi-vhr.jpg" title="Bể bơi cao cấp" data-uk-lightbox="{group:'group1'}">
-							<img src="http://vinhomesriverside.herokuapp.com/samples/tien-ich/be-boi-vhr.jpg" alt="Bể bơi">
-							<div class="light-text"><span>bể bơi cao cấp</span></div>
+						<li><a href="<?php echo e(asset('samples/tien-ich/1499069011-carousel-4.jpg')); ?>" title="Bể bơi trong nhà" data-uk-lightbox="{group:'group1'}">
+							<img src="<?php echo e(asset('samples/tien-ich/1499069011-carousel-4.jpg')); ?>" alt="Bể bơi trong nhà">
+							<div class="light-text"><span>Bể bơi trong nhà</span></div>
 						</a></li>
-						<li><a href="http://vinhomesriverside.herokuapp.com/samples/tien-ich/vui-choi-vinhomes-riverside.jpg" title="Khu vui chơi giải trí" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}">
-							<img src="http://vinhomesriverside.herokuapp.com/samples/tien-ich/vui-choi-vinhomes-riverside.jpg" alt="Khu vui chơi giải trí">
-							<div class="light-text"><span>Khu vui chơi giải trí</span></div>
+                        <li><a href="<?php echo e(asset('samples/tien-ich/1499069296-carousel-1.jpg')); ?>" title="Rạp chiếu phim" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}">
+                            <img src="<?php echo e(asset('samples/tien-ich/1499069296-carousel-1.jpg')); ?>" alt="Rạp chiếu phim">
+                            <div class="light-text"><span>Rạp chiếu phim</span></div>
+                        </a></li>
+						<li><a href="<?php echo e(asset('samples/tien-ich/1499069310-carousel-2.jpg')); ?>" title="khu vui chơi trẻ em" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}">
+							<img src="<?php echo e(asset('samples/tien-ich/1499069310-carousel-2.jpg')); ?>" alt="khu vui chơi trẻ em">
+							<div class="light-text"><span>khu vui chơi trẻ em</span></div>
 						</a></li>
-						<li><a href="http://vinhomesriverside.herokuapp.com/samples/tien-ich/trung-tam-thuong-mai.png" title="Trung tâm mua sắm VINCOM" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}">
-							<img src="http://vinhomesriverside.herokuapp.com/samples/tien-ich/trung-tam-thuong-mai.png" alt="Trung tâm mua sắm VINCOM">
-							<div class="light-text"><span>Trung tâm mua sắm VINCOM</span></div>
-						</a></li>
-						<li><a href="http://vinhomesriverside.herokuapp.com/samples/tien-ich/golf-club.jpg" title="Golf" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}">
-							<img src="http://vinhomesriverside.herokuapp.com/samples/tien-ich/golf-club.jpg" alt="Golf">
-							<div class="light-text"><span>Golf</span></div>
-						</a></li>
-						<li><a href="http://vinhomesriverside.herokuapp.com/samples/tien-ich/vinmec.jpg" title="Bệnh viện Vimec" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}">
-							<img src="http://vinhomesriverside.herokuapp.com/samples/tien-ich/vinmec.jpg" alt="Bệnh viện Vimec">
-							<div class="light-text"><span>Bệnh viện Vimec</span></div>
-						</a></li>
-						<li><a href="http://vinhomesriverside.herokuapp.com/samples/tien-ich/cong-vien-khung-long.jpg" title="Công viên khủng long" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}">
-							<img src="http://vinhomesriverside.herokuapp.com/samples/tien-ich/cong-vien-khung-long.jpg" alt="Công viên khủng long">
-							<div class="light-text"><span>Công viên khủng long</span></div>
+						<li><a href="<?php echo e(asset('samples/tien-ich/1499069332-carousel-3.jpg')); ?>" title="Bể bơi ngoài trời" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}">
+							<img src="<?php echo e(asset('samples/tien-ich/1499069332-carousel-3.jpg')); ?>" alt="Bể bơi ngoài trời">
+							<div class="light-text"><span>Bể bơi ngoài trời</span></div>
 						</a></li>
 					</ul>
 				</div>
@@ -256,7 +244,7 @@ Vinhomes Riverside The Harmony- Riverside giai đoạn 2 đẳng cấp
 				<div class="policy-list uk-container uk-container-center uk-grid">
 					<div class="item submit uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
 						<h2>
-							<div class="title"> Nhận thông tin dự án - chính sách bán hàng</div>
+							<div class="title uk-text-left"> Nhận thông tin dự án - Chính Sách Bán Hàng</div>
 						</h2>
 						<?php if(Session::has('flash_message')): ?>
 						<div class="uk-alert uk-alert-success"><em> <?php echo session('flash_message'); ?></em></div>

@@ -14,10 +14,10 @@ Liên hệ phòng kinh doanh | Liên Hệ : 0967.87.69.69
 		<!-- modal -->
 		<div class="contact uk-text-center">
 			<div class="title">LIÊN HỆ PHÒNG KINH DOANH</div>
-			<h1>VINHOMES RIVERSIDE THE HARMONY</h1>
+			<h1>HỒNG HÀ ECO CITY</h1>
 			<div class="line-bottom"></div>
 			<div class="desc">
-				Xin chân thành cám ơn Quý khách đã quan tâm đến dự án. Để biết thêm thông tin chi tiết, Quý khách vui lòng liên hệ trực tiếp thông qua số điện thoại của chúng tôi - Đại lý phân phối chính thức của VINHOMES RIVERSIDE THE HARMONY , hoặc để lại thông tin theo form bên dưới. Chúng tôi sẽ hồi âm trong thời gian sớm nhất.
+				Xin chân thành cám ơn Quý khách đã quan tâm đến dự án. Để biết thêm thông tin chi tiết, Quý khách vui lòng liên hệ trực tiếp thông qua số điện thoại của chúng tôi - Đại lý phân phối chính thức của HỒNG HÀ ECO CITY , hoặc để lại thông tin theo form bên dưới. Chúng tôi sẽ hồi âm trong thời gian sớm nhất.
 			</div>
 			<div class="policy">
 				<div class="policy-list uk-container uk-container-center uk-grid">
@@ -25,7 +25,7 @@ Liên hệ phòng kinh doanh | Liên Hệ : 0967.87.69.69
 						<div class="title"> Nhận thông tin dự án - chính sách bán hàng</div>
 						<!-- <div class="line-bottom"></div> -->
 						<p>
-							Nhận ngay thông tin chính thức từ chủ đầu tư Vinhomes bao gồm mặt bằng tổng thể, mặt bằng căn hộ, hình ảnh căn hộ mẫu, bảng giá, hợp đồng mẫu.
+							Nhận ngay thông tin chính thức từ chủ đầu tư bao gồm mặt bằng tổng thể, mặt bằng căn hộ, hình ảnh căn hộ mẫu, bảng giá, hợp đồng mẫu.
 						</p>
 						@if(Session::has('flash_message'))
 						<div class="uk-alert uk-alert-success"><em> {!! session('flash_message') !!}</em></div>
@@ -90,7 +90,7 @@ Liên hệ phòng kinh doanh | Liên Hệ : 0967.87.69.69
 					<div class="item news uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
 						<div class="title"> BẢNG GIÁ & CHÍNH SÁCH BÁN HÀNG</div>
 						<!-- <div class="line-bottom"></div> -->
-						<p>Vinhomes The Harmony Chuẩn bị có đầy đủ thông tin về mặt bằng – chính sách – giá bán. Quý khách vui lòng liên hệ bộ phận Kinh doanh Vinhomes The Harmony để được cung cấp thông tin nhanh nhất</p>
+						<p>Hồng Hà Eco City Chuẩn bị có đầy đủ thông tin về mặt bằng – chính sách – giá bán. Quý khách vui lòng liên hệ bộ phận Kinh doanh để được cung cấp thông tin nhanh nhất</p>
 						<div class="list-news">
 							<ul class="uk-nav">
 								<li>
@@ -105,25 +105,6 @@ Liên hệ phòng kinh doanh | Liên Hệ : 0967.87.69.69
 			</div>
 		</div>
 	</div>
-	<!-- Google Code for V&agrave;o li&ecirc;n h&#7879; Conversion Page -->
-	<script type="text/javascript">
-	/* <![CDATA[ */
-	var google_conversion_id = 850809964;
-	var google_conversion_language = "en";
-	var google_conversion_format = "3";
-	var google_conversion_color = "ffffff";
-	var google_conversion_label = "4h65CNjijnIQ7KjZlQM";
-	var google_remarketing_only = false;
-	/* ]]> */
-	</script>
-	<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-	</script>
-	<noscript>
-	<div style="display:inline;">
-	<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/850809964/?label=4h65CNjijnIQ7KjZlQM&amp;guid=ON&amp;script=0"/>
-	</div>
-	</noscript>
-
 		<!-- modal -->
 	@include('frontend.layouts.modal')
 @endsection

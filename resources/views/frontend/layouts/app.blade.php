@@ -4,11 +4,11 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="vinhomes riverside giai đoạn 2, vinhomes the harmony, vinhomes riverside the harmony, vinhomes riverside 2.">
-	<meta name="description" content="Vinhomes Riverside là một trong những khu đô thị đẳng cấp đầu tiên ở Việt Nam, sở hữu mô hình khu biệt thự bên sông rộng lớn, tọa lạc tại quận Long Biên.">
+	<meta name="keywords" content="Dự án Chung Cư Hồng Hà Eco City do Chủ đầu tư Công ty Cổ phần Tứ Hiệp Hồng Hà phụ trách mang đến chốn an cư lý tưởng cho cư dân.">
+	<meta name="description" content="Chung Cư Hồng Hà Eco City, eco city tứ hiệp, chung cư tứ hiệp, chung cư hồng hà tứ hiệp, chung cư eco city, chung cư hồng hà, bán chung cư tứ hiệp, dự án hồng hà eco city.">
 	<title>@yield('title')</title>
-	<link rel="shortcut icon" href="assets/ico/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon.png">
+	<link rel="shortcut icon" href="samples/favicon.png" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" href="samples/favicon.png">
 
 	<!-- Bootstrap CSS -->
 	<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
