@@ -172,6 +172,7 @@ class BackendController extends Controller
         $category->category = $request['category'];
         $category->parent_id = $request->parent_id;
         $category->description = $request['description'];
+        $category->slug = str_slug($category->category);
         $category->save();
         return redirect()->back();
     }
@@ -194,6 +195,7 @@ class BackendController extends Controller
         $category->category = $request['category'];
         $category->parent_id = $request->parent_id;
         $category->description = $request['description'];
+        $category->slug = str_slug($category->category);
         $category->save();
         return redirect()->back()->with('message','Đã thêm thành công');
     }

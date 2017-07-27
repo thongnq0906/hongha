@@ -10,37 +10,23 @@
         <ul class="uk-navbar-nav uk-hidden-small">
             <?php $menu_lv1 = DB::table('categories')->where('parent_id',0)->get(); ?>
             @foreach($menu_lv1 as $item1)
-            <li data-uk-dropdown><a href="#"> {!! $item1->category !!}</a>
+            <li data-uk-dropdown>
+                @if($item1->parent_id ==0)
+                <a href="{{ route('page', $item1->slug) }}"> {!! $item1->category !!}</a>
+                @else
+                {!! $item1->category !!}
+                @endif
                 <div class="menu-childen uk-dropdown uk-dropdown-navbar">
                     <ul class="uk-nav uk-nav-navbar">
                         <?php $menu_lv2 = DB::table('categories')->where('parent_id',$item1->id)->get(); ?>
                         @foreach($menu_lv2 as $item2)
-                        <li><a href="">{!! $item2->category !!}</a></li>
+                        <li><a href="{{ route('category', ['slug' => $item2->slug]) }}">{!! $item2->category !!}</a></li>
                         @endforeach
-                        {{--<li class="{{ ((Route::currentRouteName()=='tieu-khu')?'uk-active':'') }}"><a--}}
-                                    {{--href="{{url('/')}}/tin-tuc/tieu-khu-phong-lan-phong-cach-phap.html">Tiểu Khu Phong--}}
-                            {{--Lan</a></li>--}}
-                        {{--<li class="{{ ((Route::currentRouteName()=='tieu-khu')?'uk-active':'') }}"><a--}}
-                                    {{--href="{{url('/')}}/tin-tuc/tieu-khu-nguyet-que-phong-cach-hy-lap.html">Tiểu Khu--}}
-                            {{--nguyệt quế</a></li>--}}
-                        {{--<li class="{{ ((Route::currentRouteName()=='tieu-khu')?'uk-active':'') }}"><a--}}
-                                    {{--href="{{url('/')}}/tin-tuc/tieu-khu-tulip-phong-cach-y.html">Tiểu Khu Tulip</a>--}}
-                        {{--</li>--}}
+
                     </ul>
                 </div>
             </li>
             @endforeach
-            {{--<li class="{{ ((Route::currentRouteName()=='tien-ich')?'uk-active':'') }}"><a--}}
-                        {{--href="{{Route('tien-ich')}}">Tiện ích</a></li>--}}
-            {{--<li class="{{ ((Route::currentRouteName()=='chinh-sach')?'uk-active':'') }}"><a--}}
-                        {{--href="{{url('/')}}/tin-tuc/chinh-sach-vinhomes-riverside-the-harmony-cap-nhat.html">Chính--}}
-                    {{--sách</a></li>--}}
-            {{--<li class="{{ ((Route::currentRouteName()=='quy-can-hot')?'uk-active':'') }}"><a--}}
-                        {{--href="{{ Route('quy-can-hot-frontend') }}">Quỹ căn hot</a></li>--}}
-            {{--<li class="{{ ((Route::currentRouteName()=='tin-tuc')?'uk-active':'') }}"><a--}}
-                        {{--href="{{ Route('tin-tuc') }}">Tin tức</a></li>--}}
-            {{--<li class="{{ ((Route::currentRouteName()=='lien-he2')?'uk-active':'') }}"><a--}}
-                        {{--href="{{ Route('lien-he2') }}">liên hệ</a></li>--}}
         </ul>
         <ul class="hotline-top uk-nav uk-float-right uk-hidden-small">
             <li class="hotline"><a href="tel:0967876969"><span class="uk-icon-phone"></span>0967.87.69.69</a></li>
