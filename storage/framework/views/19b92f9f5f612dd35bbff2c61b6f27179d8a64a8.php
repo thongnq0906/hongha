@@ -21,7 +21,7 @@
 	                </div>
 	            </li>
 	            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-	            <li class="<?php echo e(((Route::currentRouteName()=='quy-can-hot')?'uk-active':'')); ?>"><a href="<?php echo e(Route('quy-can-hot-frontend')); ?>">Quỹ căn hot</a></li>
+	            <!-- <li class="<?php echo e(((Route::currentRouteName()=='quy-can-hot')?'uk-active':'')); ?>"><a href="<?php echo e(Route('quy-can-hot-frontend')); ?>">Quỹ căn hot</a></li> -->
 
 	            <li class="<?php echo e(((Route::currentRouteName()=='lien-he2')?'uk-active':'')); ?>"><a href="<?php echo e(Route('lien-he2')); ?>">liên hệ</a></li>
 			</ul>
@@ -67,7 +67,7 @@
 	(function(){
 	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
 	s1.async=true;
-	s1.src='https://embed.tawk.to/59253bbc76be7313d291e351/default';
+	s1.src='https://embed.tawk.to/5979b9825dfc8255d623f341/default';
 	s1.charset='UTF-8';
 	s1.setAttribute('crossorigin','*');
 	s0.parentNode.insertBefore(s1,s0);
