@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Post_category;
 use Illuminate\Http\Request;
 use App\Role;
 use App\User;
@@ -62,13 +63,15 @@ class BackendController extends Controller
     }
 
     public function blog(){
+        $data=Category::select('id','category','parent_id')->get()->toArray();
         $posts = Post::orderBy('hot','DESC')->orderBy('id','desc')->paginate(10);
         $categories = Category::all();
-        return view('admin.blog',compact('posts','categories'));
+        return view('admin.blog',compact('posts','categories', 'data'));
     }
 
+
+
     public function addPost(Request $request){
-        //return var_dump(dd($request->all()));
         $post = new Post;
         $post->post = $request['post'];
         $post->description = $request['description'];
@@ -78,6 +81,7 @@ class BackendController extends Controller
         $post->hot = $request['hot'];
         $post->news = $request['news'];
         $post->is_hidden = $request['is_hidden'];
+        $post->category_id = $request['category_id'];
 
         if($request->hasFile('avatar')){
 
@@ -87,33 +91,23 @@ class BackendController extends Controller
             Image::make($avatar)->fit(400,225)->save(public_path('/photos/shares/'.$filename));
 
             $post->avatar = ('/photos/shares/'.$filename);
-        
+
         } else{
             $post->avatar = ('/photos/shares/queenland.jpg');
         }
-
-
         $post->save();
-
         $post->slug = str_slug($post->post).'-'.$post->id;
         $post->save();
 
         $categories = Category::all();
         foreach ($categories as $category) {
-            //return $request[$category->id];
-            
             if($request[$category->id])
             {
-
                 $post->category()->attach($category);
-            } 
-            //$post->category()->attach($category);
+            }
         }
-
-
         return redirect()->back();
     }
-
     public function removePost(Request $request){
         Post::where('id',$request['id'])->first()->delete();
         return redirect()->route('blog-manage');
@@ -122,71 +116,63 @@ class BackendController extends Controller
     public function editPost($id){
         $post = Post::findOrFail($id);
         $categories = Category::all();
-        return view('admin.postEdit',compact('post','id','categories'));
+        $data=Category::select('id','category','parent_id')->get()->toArray();
+        return view('admin.postEdit', compact('id', 'post','categories','data'));
 
     }
 
-    public function updatePost($id, Request $request){
+    public function updatePost($id, Request $request)
+    {
         $post = Post::findOrFail($id);
         $post->post = $request['post'];
         $post->description = $request['description'];
         $post->slug = $request['slug'];
         $post->seo_title = $request['seo_title'];
         $post->seo_description = $request['seo_description'];
-        $post->hot = (is_null($request['hot'])?'0':'1') ;
-        $post->news = (is_null($request['news'])?'0':'1') ;
-        $post->is_hidden = (is_null($request['is_hidden'])?'0':'1') ;
+        $post->hot = (is_null($request['hot']) ? '0' : '1');
+        $post->news = (is_null($request['news']) ? '0' : '1');
+        $post->is_hidden = (is_null($request['is_hidden']) ? '0' : '1');
+        $post->category_id = $request['category_id'];
 
 
-        if($request->hasFile('avatar')){
-            //return "Co avatar";
-
+        if ($request->hasFile('avatar')) {
             $avatar = $request->file('avatar');
             $filename = time() . '.' . $avatar->getClientOriginalExtension();
-            Image::make($avatar)->fit(400,225)->save(public_path('/photos/shares/'.$filename));
-
-            // Image::make($avatar)/*->fit(1920,1080)*/->save( public_path('upload\avatars' . $filename ) );
-            $post->avatar = ('/photos/shares/'.$filename);
-
-        
-        } else{
-
+            Image::make($avatar)->fit(400, 225)->save(public_path('/photos/shares/' . $filename));
+            $post->avatar = ('/photos/shares/' . $filename);
+        } else {
         }
         try {
             $post->save();
             $post->category()->detach();
         } catch (\Illuminate\Database\QueryException $e) {
-            
-             dd($e);
+
+            dd($e);
         }
-        
+       $categories = Category::all();
+       foreach ($categories as $category) {
 
-        $categories = Category::all();
-        foreach ($categories as $category) {
-            
-            if($request[$category->id])
-            {
+           if ($request[$category->id]) {
 
-                $post->category()->attach($category);
-            } 
-        }
-
-
-        // $message = "Đã sửa thành công";
-        // return view('admin.postEdit',compact('post','id','categories','message'));
-        return redirect('/admin/blog-manage/')-> with('success', 'Edit '.$post -> post.' success');
+               $post->category()->attach($category);
+           }
+       }
+        return redirect('/admin/blog-manage/')->with('success', 'Edit ' . $post->post . ' success');
     }
 
 
     public function category(){
         $categories = \App\Category::all();
-        return view('admin.category',compact('categories'));
+        $data=Category::select('id','category','parent_id')->get()->toArray();
+        return view('admin.category',compact('categories', 'data'));
     }
 
     public function addCategory(Request $request){
         $category = new Category;
         $category->category = $request['category'];
+        $category->parent_id = $request->parent_id;
         $category->description = $request['description'];
+        $category->slug = str_slug($category->category);
         $category->save();
         return redirect()->back();
     }
@@ -197,15 +183,19 @@ class BackendController extends Controller
     }
 
     public function editCategory($id){
+        $categories = \App\Category::all();
         $category = Category::findOrFail($id);
-        return view('admin.categoryEdit',compact('category','id'));
+        $data=Category::select('id','category','parent_id')->get()->toArray();
+        return view('admin.categoryEdit',compact('category','id', 'categories', 'data'));
 
     }
 
     public function updateCategory($id, Request $request){
         $category = Category::findOrFail($id);
         $category->category = $request['category'];
+        $category->parent_id = $request->parent_id;
         $category->description = $request['description'];
+        $category->slug = str_slug($category->category);
         $category->save();
         return redirect()->back()->with('message','Đã thêm thành công');
     }

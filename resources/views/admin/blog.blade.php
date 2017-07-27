@@ -24,22 +24,14 @@
 				<label for="avatar">Ảnh bìa:</label>
 				<input name="avatar" type="file" class="">
 			</div>
-			
-			
-			<div class="form-group">			
-					<label for="category">Danh mục:</label>	
-			
-
-			@foreach($categories as $category)
-
+			<div class="form-group">
+					<label for="category">Danh mục:</label>
 			<div class="checkbox">
-  					
-  						<label><input 
-							type="checkbox" 
-							name="{{ $category->id }}" 
-						/>{{ $category->category}}</label>
-					</div>
-			@endforeach
+                <select class="form-control" name="category_id">
+                    <?php  menu($data);?>
+                </select>
+            </div>
+
 
 			</div>
 			{{ csrf_field() }}
@@ -66,57 +58,53 @@
 			</thead>
 			<tbody>
 			@foreach($posts as $post)
-			
-				<tr>
-				
-					
-					<td>{{$post->id}}</td>
-					<td><a href="{{$post->getUrl()}}">{{$post->post}}</a></td>
-					<!-- <td><?php //echo(html_entity_decode($post->description)); ?></td>  -->
-					<td>
-					<img src="{{$post->avatar}}" style="max-width: 100%;"/>				
 
-					</td>	
-					<td>{{$post->getShortDec()}}</td>	
+				<tr>
+
+
+					<td>{{$post->id}}</td>
+					<td><a href="{{$post->getUrl()}}">{!! $post->post !!}</a></td>
 					<td>
-						@foreach($post->category as $category)
-						{{ $category->category}}<br/>
-						@endforeach
-						
+						<img src="{{$post->avatar}}" style="max-width: 100%;"/>
+
+					</td>
+					<td>{{$post->getShortDec()}}</td>
+					<td>
+						{{$post->Cate->category}}
 					</td>
 					<td>
 						@if($post->hot == 1)
-							<span class="label label-success">Đang Hiện</span>
+						<span class="label label-success">Đang Hiện</span>
 						@else
-							<span class="label  label-warning">Đang Ẩn</span>
+						<span class="label  label-warning">Đang Ẩn</span>
 						@endif
 					</td>
 					<td>
 						@if($post->news == 1)
-							<span class="label label-success">Đang Hiện</span>
+						<span class="label label-success">Đang Hiện</span>
 						@else
-							<span class="label  label-warning">Đang Ẩn</span>
+						<span class="label  label-warning">Đang Ẩn</span>
 						@endif
 					</td>
 					<td>
 						@if($post->is_hidden == 1)
-							<span class="label label-warning">Đang ẩn</span>
+						<span class="label label-warning">Đang ẩn</span>
 						@else
-							<span class="label label-success">Đang hiện</span>
+						<span class="label label-success">Đang hiện</span>
 						@endif
 					</td>
 					<td>
 						<a href="{{ route('edit-post',['id'=>$post->id])  }}">
-						<button class="btn btn-default">Sửa</button>
+							<button class="btn btn-default">Sửa</button>
 						</a>
 						<form action="{{ route('remove-post') }}" method="post" style="display:inline;">
-						<input type="hidden" name="id" value="{{$post->id}}">
-						<button class="btn btn-danger" type="submit">Xóa</button>
-						{{ csrf_field() }}
+							<input type="hidden" name="id" value="{{$post->id}}">
+							<button class="btn btn-danger" type="submit">Xóa</button>
+							{{ csrf_field() }}
 						</form>
-					</td>							
-					
-				
+					</td>
+
+
 				</tr>
 				
 			@endforeach
