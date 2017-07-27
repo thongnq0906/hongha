@@ -134,15 +134,15 @@ class FrontendController extends Controller
             );
 
 
-        try {
-            Mail::to('thanhtamqueenland@gmail.com')->cc(['itqueenland2017@gmail.com','rubyrb88@gmail.com'])->send(new \App\Mail\NewParagonCustomer($customer));
-        } catch (\Swift_TransportException $e) {
-        }
-        
         // try {
-        //     Mail::to('itqueenland2017@gmail.com')->send(new \App\Mail\NewParagonCustomer($customer));
+        //     Mail::to('thanhtamqueenland@gmail.com')->cc(['itqueenland2017@gmail.com','rubyrb88@gmail.com'])->send(new \App\Mail\NewParagonCustomer($customer));
         // } catch (\Swift_TransportException $e) {
         // }
+        
+        try {
+            Mail::to('itqueenland2017@gmail.com')->send(new \App\Mail\NewParagonCustomer($customer));
+        } catch (\Swift_TransportException $e) {
+        }
 
         \Session::flash('flash_message','Cảm ơn quý khách đã đăng ký thông tin. Chúng tôi sẽ liên hệ với quý khách trong thời gian sớm nhất!');
        

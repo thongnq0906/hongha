@@ -1,13 +1,16 @@
 <?php
-    function menu($data,$parent_id=0,$str=""){
-        foreach ($data as $val){
-            $id=$val["id"];
-            $category=$val["category"];
-            if ($val["parent_id"]==$parent_id) {
-                echo '<option value="' . $id . '">' . $str . "" . $category . '</option>';
-                menu($data, $id, $str . "&nbsp;&nbsp;&nbsp;&nbsp;");
-            }
-
-        }
+    function menu($data, $parent = 0, $str="-", $select=0){
+        foreach ($data as $key => $val){
+          $id = $val["id"];
+          $name = $val["category"];
+          if($val['parent_id']==$parent){
+             if($select !=0 && $id == $select){
+                echo "<option value='$id' selected='selected'>$str $name</option>";
+             }else {
+                echo "<option value='$id'> $str $name</option>";
+             }
+             menu ($data, $id, $str."--");
+          }
+       }
     }
 ?>

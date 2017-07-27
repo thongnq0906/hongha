@@ -28,6 +28,7 @@
 					<label for="category">Danh mục:</label>
 			<div class="checkbox">
                 <select class="form-control" name="category_id">
+                	<option>Chọn Danh Mục</option>
                     <?php  menu($data);?>
                 </select>
             </div>
@@ -99,7 +100,7 @@
 						</a>
 						<form action="{{ route('remove-post') }}" method="post" style="display:inline;">
 							<input type="hidden" name="id" value="{{$post->id}}">
-							<button class="btn btn-danger" type="submit">Xóa</button>
+							<button class="btn btn-danger" type="submit" onclick="return confirm_delete('are you sure delete')">Xóa</button>
 							{{ csrf_field() }}
 						</form>
 					</td>

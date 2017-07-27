@@ -154,7 +154,7 @@ Route::get('/quy-can-hot',[
     'uses' => 'BackendController@quyCanHot',
     'as' => 'quy-can-hot',
     'middleware' => 'roles',
-    'roles' => ['Author'],
+    'roles' => ['Author','Admin'],
     ]);
 
 Route::post('/quy-can-hot',[

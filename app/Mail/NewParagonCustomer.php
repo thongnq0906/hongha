@@ -30,6 +30,6 @@ class NewParagonCustomer extends Mailable
      */
     public function build()
     {
-        return $this->subject('New VHR2 Customers')->markdown('NewParadonCustomer',compact('customer'));
+        return $this->subject('New Hồng Hà Customers')->markdown('NewParadonCustomer',compact('customer'));
     }
 }
