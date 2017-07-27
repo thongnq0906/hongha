@@ -7,9 +7,13 @@
 				<label for="category">Tên danh mục:</label>
 				<input type="text" class="form-control" name="category" required="">
 			</div>
+			<select class="form-control" name="parent_id">
+				<option value="0" selected="selected">Chọn danh mục</option>
+				<?php  menu($data);?>
+			</select>
 			<div class="form-group">
 				<label for="description">Miêu tả chi tiết:</label>
-				<input type="text-area" class="form-control" name="description" required="">
+				<input type="text-area" class="form-control" name="description">
 			</div>
 			{{ csrf_field() }}
 			<button type="submit" class="btn btn-default">Thêm</button>
@@ -32,7 +36,7 @@
 					
 					<td>{{$category->id}}</td>
 					<td>{{$category->category}}</td>
-					<td>{{$category->description}}</td>	
+					<td>{{$category->description}}</td>
 					<td>
 						<a href="{{ route('edit-category',['id'=>$category->id])  }}">
 						<button class="btn btn-default	">Sửa</button>

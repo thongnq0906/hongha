@@ -25,6 +25,11 @@ Route::get('/lien-he.html','FrontendController@lienHe')->name('lien-he');
 Route::get('/lien-he2.html','FrontendController@lienHe2')->name('lien-he2');
 Route::get('/tien-ich.html','FrontendController@tienIch')->name('tien-ich');
 Route::post('/lien-he.html','FrontendController@contactSubmit')->name('contact-submit');
+Route::get('/menu','FrontendController@menu')->name('menu');
+Route::get('/newpost','FrontendController@newPost')->name('new-post');
+Route::get('/hot','FrontendController@newHot')->name('new-hot');
+Route::get('/category/{slug}.html','FrontendController@getCategory')->name('category');
+Route::get('/{id}.html','FrontendController@getPage')->name('page');
 
 
 Route::get('/home',function(){
