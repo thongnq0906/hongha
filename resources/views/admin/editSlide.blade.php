@@ -29,6 +29,7 @@
               <span class="help-block">{{$errors->first('image')}}</span>
             @endif
           <input name="image" type="file" class="" value="{{$slide->image}}">
+          <img src="{{$slide->image}}" style="max-width: 30%;"/>
         </div>
         <button type="submit" class="btn btn-primary">Cập nhật</button>
       </div>
