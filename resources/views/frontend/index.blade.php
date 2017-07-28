@@ -23,7 +23,7 @@ Mở bán chung Cư Hồng Hà Eco City- Tứ Hiệp, Thanh Trì
                     <li data-slideshow-slide="img">
                         <img src="{{ asset('samples/slide/untitled.png') }}">
                         <div class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-left">
-                            <h1>Chung cư Hồng Hà Tứ Hiệp - nơi an cư thịnh vượng</h1>
+                            <h1>Chung cư Hồng Hà Tứ Hiệp - Nơi an cư thịnh vượng</h1>
                             <!--<p>Con đường của vẻ đẹp kiêu sa, sang quý, của hoàn mỹ, vẹn toàn.</p>-->
                         </div>
                     </li>
