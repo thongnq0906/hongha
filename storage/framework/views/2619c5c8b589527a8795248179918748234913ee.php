@@ -19,9 +19,11 @@ Mở bán chung Cư Hồng Hà Eco City- Tứ Hiệp, Thanh Trì
 	            <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
 			    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
 	            <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
-			        <li data-uk-slideshow-item="0"><a href=""></a></li>
-			        <li data-uk-slideshow-item="1"><a href=""></a></li>
-			        <li data-uk-slideshow-item="2"><a href=""></a></li>
+	            	<?php $i=0; ?>
+						<?php $__currentLoopData = $slide; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $sli): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+					        <li data-uk-slideshow-item="<?php echo e($i); ?>"><a href=""></a></li>
+				        <?php $i++; ?>
+					<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 		    	</ul>
 	        </div>
 		</div>

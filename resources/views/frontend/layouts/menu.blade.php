@@ -29,7 +29,7 @@
             <li class="{{{ ((Route::currentRouteName()=='lien-he2')?'uk-active':'') }}}"><a href="{{ Route('lien-he2') }}">liên hệ</a></li>
             </ul>
         <ul class="hotline-top uk-nav uk-float-right uk-hidden-small">
-            <li class="hotline"><a href="tel:0967876969"><span class="uk-icon-phone"></span>0967.87.69.69</a></li>
+            <!-- <li class="hotline"><a href="tel:0967876969"><span class="uk-icon-phone"></span>0967.87.69.69</a></li> -->
             <li class="hotline"><a href="tel:0916086688"><span class="uk-icon-phone"></span>0916.08.66.88</a></li>
             <li class="bao-gia"><a href="#my-id-form" title="nhận báo giá" data-uk-modal>Nhận báo giá</a></li>
         </ul>
