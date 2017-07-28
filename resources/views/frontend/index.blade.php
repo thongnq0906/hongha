@@ -7,34 +7,23 @@ Mở bán chung Cư Hồng Hà Eco City- Tứ Hiệp, Thanh Trì
 		<div class="slideshow">
 			<div class="uk-slidenav-position" data-uk-slideshow="{kenburns:true, autoplay:true}">
 	            <ul class="uk-slideshow uk-overlay-active" data-uk-slideshow="{kenburns:true}">
+	            @foreach($slide as $s)
 	                <li data-slideshow-slide="img">
-	                	<img src="{{ asset('samples/slide/untitled1.png') }}">
-						<div class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-left">
-                            <h1>Mở bán chung Cư Hồng Hà Eco City </h1>
-                            <!--<p>Con đường danh vọng và niềm tin chiến thắng</p>-->
-                        </div>
-	                <li data-slideshow-slide="img">
-	                	<img src="{{ asset('samples/slide/section-bg-home.jpg') }}">
+	                	<img src="{{ $s->image}}">
 	                	<div class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-left">
-                            <h1>Eco City Tứ Hiệp - Không gian xanh hoàn hảo</h1>
+                            <h1>{{ $s->title }}</h1>
                             <!--<p>Con đường của vẻ đẹp kiêu sa, sang quý, của hoàn mỹ, vẹn toàn.</p>-->
                         </div>
                 	</li>
-                    <li data-slideshow-slide="img">
-                        <img src="{{ asset('samples/slide/untitled.png') }}">
-                        <div class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-left">
-                            <h1>Chung cư Hồng Hà Tứ Hiệp - Nơi an cư thịnh vượng</h1>
-                            <!--<p>Con đường của vẻ đẹp kiêu sa, sang quý, của hoàn mỹ, vẹn toàn.</p>-->
-                        </div>
-                    </li>
+                @endforeach
 	            </ul>
 	            <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous" data-uk-slideshow-item="previous"></a>
 			    <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next" data-uk-slideshow-item="next"></a>
 	            <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-center">
-		        <li data-uk-slideshow-item="0"><a href=""></a></li>
-		        <li data-uk-slideshow-item="1"><a href=""></a></li>
-		        <li data-uk-slideshow-item="2"><a href=""></a></li>
-		    </ul>
+			        <li data-uk-slideshow-item="0"><a href=""></a></li>
+			        <li data-uk-slideshow-item="1"><a href=""></a></li>
+			        <li data-uk-slideshow-item="2"><a href=""></a></li>
+		    	</ul>
 	        </div>
 		</div>
 

@@ -163,6 +163,38 @@ Route::post('/quy-can-hot',[
     'middleware' => 'roles',
     'roles' => ['Admin','Author'],
     ]);
+Route::get('/slide-manage',[
+    'uses' => 'BackendController@slide',
+    'as' => 'slide-manager',
+    'middleware' => 'roles',
+    'roles' => ['Admin','Author'],
+    ]);
+Route::post('/add-slide',[
+    'uses' => 'BackendController@addSlide',
+    'as' => 'add-slide',
+    'middleware' => 'roles',
+    'roles' => ['Admin','Author'],
+    ]);
+Route::get('/edit-slide/{id}',[
+    'uses' => 'BackendController@editSlide',
+    'as' => 'edit-slide',
+    'middleware' => 'roles',
+    'roles' => ['Admin','Author'],
+    ]);
+
+Route::post('/update-slide/{id}',[
+    'uses' => 'BackendController@updateSlide',
+    'as' => 'update-slide',
+    'middleware' => 'roles',
+    'roles' => ['Admin','Author'],
+    ]);
+
+Route::post('/remove-slide',[
+    'uses' => 'BackendController@removeSlide',
+    'as' => 'remove-slide',
+    'middleware' => 'roles',
+    'roles' => ['Admin','Author'],
+    ]);
 
 });
 

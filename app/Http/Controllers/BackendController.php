@@ -12,6 +12,9 @@ use App\Customer;
 use Image;
 use File;
 use Illuminate\Support\Facades\Storage;
+use App\Slide;
+use App\Http\Requests\SlideRequest;
+use Illuminate\Support\Facades\Auth;
 
 class BackendController extends Controller
 {
@@ -82,6 +85,7 @@ class BackendController extends Controller
         $post->news = $request['news'];
         $post->is_hidden = $request['is_hidden'];
         $post->category_id = $request['category_id'];
+        $post->user_id =  Auth::user()->id;
 
         if($request->hasFile('avatar')){
 
@@ -133,6 +137,7 @@ class BackendController extends Controller
         $post->news = (is_null($request['news']) ? '0' : '1');
         $post->is_hidden = (is_null($request['is_hidden']) ? '0' : '1');
         $post->category_id = $request['category_id'];
+        $post->user_id =  Auth::user()->id;
 
 
         if ($request->hasFile('avatar')) {
@@ -246,5 +251,73 @@ class BackendController extends Controller
         Storage::put('quy-can-hot/'.$quyCanHotID, $quyCanHotContent);
         
         return redirect()->back()->with('message','Đã thêm thành công');
+    }
+
+    public function slide()
+    {
+        $slide = Slide::all();
+        return view('admin.slide', compact('slide'));
+    }
+    public function addSlide(SlideRequest $request)
+    {
+        $slide = new Slide;
+        $slide->title = $request['title'];
+        $slide->description = $request['description'];
+        if($request->hasFile('image')){
+            $image = $request->file('image');
+            $filename = time() . '.' . $image->getClientOriginalExtension();
+            $width = Image::make($image)->width();
+            $height = Image::make($image)->height();
+            if($width <= 1920 && $height <= 1080)
+            {
+            Image::make($image)->resize(1920,1080)->save(public_path('/photos/shares/'.$filename));
+            $slide->image = ('/photos/shares/'.$filename);
+            }
+            else{
+                return redirect()->back()->with('error', 'Kích thước ảnh phải be hơn 1920x1080');
+            }
+            Image::make($image)->resize(1920,1080)->save(public_path('/photos/shares/'.$filename));
+            $slide->image = ('/photos/shares/'.$filename);
+        } else{
+            $slide->image = ('/photos/shares/queenland.jpg');
+        }
+        $slide->save();
+        return redirect()->back()->with('success', 'Thêm thành công');
+    }
+    public function editSlide($id)
+    {
+        $slide = Slide::findOrFail($id);
+        return view('admin.editSlide', compact('slide', 'id'));
+    }
+    public function updateSlide($id, SlideRequest $request)
+    {
+        $slide = Slide::findOrFail($id);
+        $slide->title = $request['title'];
+        $slide->description = $request['description'];
+        if($request->hasFile('image')){
+            $image = $request->file('image');
+            $filename = time() . '.' . $image->getClientOriginalExtension();
+            $width = Image::make($image)->width();
+            $height = Image::make($image)->height();
+            if($width <= 1920 && $height <= 1080)
+            {
+            Image::make($image)->resize(1920,1080)->save(public_path('/photos/shares/'.$filename));
+            $slide->image = ('/photos/shares/'.$filename);
+            }
+            else{
+                return redirect()->back()->with('error', 'Kích thước ảnh phải be hơn 1920x1080');
+            }
+            Image::make($image)->resize(1920,1080)->save(public_path('/photos/shares/'.$filename));
+            $slide->image = ('/photos/shares/'.$filename);
+        } else{
+            $slide->image = ('/photos/shares/queenland.jpg');
+        }
+        $slide->save();
+        return redirect()->route('slide-manager')->with('success-update', 'Sửa thành công');
+    }
+    public function removeSlide(Request $request)
+    {
+        Slide::where('id', $request['id'])->first()->delete();
+        return redirect()->route('slide-manager');
     }
 }

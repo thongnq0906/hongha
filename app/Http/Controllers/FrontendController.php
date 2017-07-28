@@ -10,6 +10,7 @@ use Auth;
 use Storage;
 use App\Http\Requests\ContactRequest;
 use App\Category;
+use App\Slide;
 
 class FrontendController extends Controller
 {
@@ -41,7 +42,8 @@ class FrontendController extends Controller
     }
 
     public function index(){
-        return view('frontend.index');
+        $slide = Slide::All();
+        return view('frontend.index', compact('slide'));
     }
     public function shopHouse(){
     	return view('frontend.shopHouse');
