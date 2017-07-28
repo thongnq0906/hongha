@@ -30,7 +30,6 @@
 				<div class=" item uk-width-large-1-3 uk-width-medium-1-3 uk-width-small-1-1">
 					<div class="title">CAM KẾT CỦA CHÚNG TÔI</div>
 					<ul class="">
-						<li>Queen Land là đại lý phân phối chính thức Hồng Hà Eco City</li>
 						<li>Có quỹ căn đẹp đem tới cho quý khách hàng lựa chọn đa dạng phù hợp với nhu cầu và tài chính</li>
 						<li>Cung cấp thông tin chính xác và nhanh chóng nhất</li>
 						<li>Hỗ trợ tư vấn pháp lý và thủ tục nhanh chóng</li>
@@ -47,7 +46,7 @@
 				</div>
 				<div class="item uk-width-large-1-3 uk-width-medium-1-3 uk-width-small-1-1">
 					<div class="maps">
-					<a href="tel:0916086688" title=""><img src="<?php echo e(asset('samples/logo-queenland.png')); ?>"></a>
+					<a href="https://www.facebook.com/H%E1%BB%93ng-H%C3%A0-Eco-City-1955250248055690/" title=""><img src="<?php echo e(asset('/samples/logo.png')); ?>"></a>
 					</div>
 				</div>
 			</div>
