@@ -10,20 +10,20 @@ Mở bán chung Cư Hồng Hà Eco City- Tứ Hiệp, Thanh Trì
 	                <li data-slideshow-slide="img">
 	                	<img src="{{ asset('samples/slide/untitled1.png') }}">
 						<div class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-left">
-                            <h1>Bể bơi trong nhà</h1>
+                            <h1>Mở bán chung Cư Hồng Hà Eco City </h1>
                             <!--<p>Con đường danh vọng và niềm tin chiến thắng</p>-->
                         </div>
 	                <li data-slideshow-slide="img">
 	                	<img src="{{ asset('samples/slide/section-bg-home.jpg') }}">
 	                	<div class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-left">
-                            <h1>Tổng quan</h1>
+                            <h1>Eco City Tứ Hiệp - Không gian xanh hoàn hảo</h1>
                             <!--<p>Con đường của vẻ đẹp kiêu sa, sang quý, của hoàn mỹ, vẹn toàn.</p>-->
                         </div>
                 	</li>
                     <li data-slideshow-slide="img">
                         <img src="{{ asset('samples/slide/untitled.png') }}">
                         <div class="uk-overlay-panel uk-overlay-background uk-overlay-bottom uk-overlay-slide-left">
-                            <h1>Không gian xanh</h1>
+                            <h1>Chung cư Hồng Hà Tứ Hiệp - Nơi an cư thịnh vượng</h1>
                             <!--<p>Con đường của vẻ đẹp kiêu sa, sang quý, của hoàn mỹ, vẹn toàn.</p>-->
                         </div>
                     </li>
