@@ -41,20 +41,20 @@
 					<div class="title">LIÊN HỆ VỚI CHÚNG TÔI</div>
 					<ul class="hotline">
 						<li><i class="uk-icon-map-marker"></i> Trụ sở chính: Tầng 1&2, Tòa Vimeco, Lô E9 đường Phạm Hùng, P. Trung Hòa, Q. Cầu Giấy, HN</li>
-						<li><a href="tel:0967876969" title="0967 87 6969"><i class="uk-icon-phone-square"></i>Hotline: 0967 87 6969</a></li>
+						<li><a href="tel:0916086688" title="0967 87 6969"><i class="uk-icon-phone-square"></i>Hotline: 0916.08.66.88</a></li>
 						<li><a href="tel:0473057666" title="04.7305.7666"><i class="uk-icon-phone"></i> Tel: 04.7305.7666</a></li>
 					</ul>
 				</div>
 				<div class="item uk-width-large-1-3 uk-width-medium-1-3 uk-width-small-1-1">
 					<div class="maps">
-					<a href="tel:0967876969" title=""><img src="<?php echo e(asset('samples/logo-queenland.png')); ?>"></a>
+					<a href="tel:0916086688" title=""><img src="<?php echo e(asset('samples/logo-queenland.png')); ?>"></a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="mobile-bottom">
 			<ul class="uk-nav">
-				<li><a href="tel:0967876969"><i class="uk-icon-phone"></i>0967.87.69.69</a></li>
+				<li><a href="tel:0916086688"><i class="uk-icon-phone"></i>0916.08.66.88</a></li>
 				<li><a href="#my-id-form" data-uk-modal> Nhận thông tin</a></li>
 			</ul>
 		</div>
