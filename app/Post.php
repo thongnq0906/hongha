@@ -46,4 +46,9 @@ class Post extends Model
     public function getEditUrl(){
         return route('edit-post',['id'=>$this->id]);
     }
+
+    public function User()
+    {
+        return $this->belongsTo('App\User', 'user_id', 'id');
+    }
 }

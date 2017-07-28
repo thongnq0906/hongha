@@ -80,6 +80,7 @@
                         <li><a href="{{ route('blog-manage') }}"><i class="fa fa-home"></i>Quản lý bài viết</a></li>
                        
                         <li><a href="{{ route('quy-can-hot') }}"><i class="fa fa-home"></i>Quản lý Quỹ căn hot</a></li>
+                        <li><a href="{{ route('slide-manager') }}"><i class="fa fa-home"></i>Quản lý Slide</a></li>
                         @endif
 
                         @if (Auth::user()->hasRole('admin'))

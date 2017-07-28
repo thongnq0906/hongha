@@ -25,6 +25,11 @@
 									@endif
 									</div>
 							</h1>
+							<div class="auth">
+								@if(Auth::check())
+								by: <strong>{{$post->User->name}}</strong>
+								@endif
+							</div>
 							<div class="detail-desc">
 								<?php echo(html_entity_decode($post->description)); ?>					
 							</div>
