@@ -40,9 +40,10 @@ Mở bán chung Cư Hồng Hà Eco City- Tứ Hiệp, Thanh Trì
 				<div class="uk-panel">
 					<div class="title uk-text-center"> Tổng quan dự án	 </div>
 					<div class="desc ">
-						<p>Vị trí: Nằm trên địa bàn xã Tứ Hiệp, huyện Thanh Trì, thành phố Hà Nội
-							Gồm 3 tổ hợp: Toà nhà thương mại , Nhà ở xã hội , Trung tâm thương mại
-							Tiện ích dự án: Hồ bơi 500 m², nhà trẻ, phòng gym, siêu thị mini, nhà hàng, cà phê sân vườn…</p>
+						<p>Vị trí: Nằm trên địa bàn xã Tứ Hiệp, huyện Thanh Trì, thành phố Hà Nội 
+						</p>
+						<p>Chủ đầu tư: Công ty Cổ phần Tứ Hiệp Hồng Hà Dầu Khí
+						Tiện ích: Hồ bơi 500 m², nhà trẻ, phòng gym, siêu thị mini, nhà hàng, cà phê sân vườn…</p>
 					</div>
 					<div class="nav">
 						<div class=" uk-grid">
@@ -85,6 +86,7 @@ Mở bán chung Cư Hồng Hà Eco City- Tứ Hiệp, Thanh Trì
 									17 Tòa nhà từ 10 tầng đến 34 tầng
 								</div>
 							</div>
+							
 						</div>
 						<div class=" uk-grid">
 							<div class="uk-width-1-2 uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 media-heading">
@@ -96,8 +98,13 @@ Mở bán chung Cư Hồng Hà Eco City- Tứ Hiệp, Thanh Trì
 									3283 Căn
 								</div>
 							</div>
-							<div class="uk-width-1-2 uk-width-large-1-2 media-heading">
+							<div class="uk-width-1-2 uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 media-heading">
 								<div class="uk-card uk-card-default uk-card-body">
+									<a class="media-left uk-width-1-6" href="#">
+										<img src="{{ asset('samples/icon-1.png') }}">
+									</a>
+									<div class="uk-width-1-1">Sản phẩm:</div>
+									Toà nhà thương mại, Nhà ở xã hội, Trung tâm thương mại 
 								</div>
 							</div>
 						</div>
@@ -140,7 +147,7 @@ Mở bán chung Cư Hồng Hà Eco City- Tứ Hiệp, Thanh Trì
 				<div class="shophouse-item uk-grid">
 					<div class="item uk-width-large-1-3 uk-width-medium-1-1 uk-width-small-1-1">
 						<a href="#" title="">
-							<img src="{{ asset('samples/tieu-khu/1495161667-project-1.jpg') }}">
+							<img src="{{ asset('samples/tieu-khu/loai-hinh-nha-o-xa-hoi-chung-cu-hong-ha-eco-city.jpg') }}">
 						</a>
 						<a href="#" title="">
 							<h3>Nhà ở xã hội</h3>
@@ -151,7 +158,7 @@ Mở bán chung Cư Hồng Hà Eco City- Tứ Hiệp, Thanh Trì
 					</div>
 					<div class="item uk-width-large-1-3 uk-width-medium-1-1 uk-width-small-1-1">
 						<a href="#" title="">
-							<img src="{{ asset('samples/tieu-khu/1495161674-project-2.jpg') }}">
+							<img src="{{ asset('samples/tieu-khu/loai-hinh-toa-nha-thuong-mai-hong-ha-eco-city.jpg') }}">
 						</a>
 						<a href="#" title="">
 							<h3>Tòa nhà thương mại</h3>
@@ -162,7 +169,7 @@ Mở bán chung Cư Hồng Hà Eco City- Tứ Hiệp, Thanh Trì
 					</div>
 					<div class="item uk-width-large-1-3 uk-width-medium-1-1 uk-width-small-1-1">
 						<a href="#" title="">
-							<img src="{{ asset('samples/tieu-khu/trungcu.jpg') }}"/>
+							<img src="{{ asset('samples/tieu-khu/loai-hinh-trung-tam-thuong-mai.jpg') }}"/>
 						</a>
 						<a href="#" title="">
 							<h3>Trung tâm thương mại</h3>
