@@ -14,6 +14,7 @@ use File;
 use Illuminate\Support\Facades\Storage;
 use App\Slide;
 use App\Http\Requests\SlideRequest;
+use Illuminate\Support\Facades\Auth;
 
 class BackendController extends Controller
 {
@@ -84,6 +85,7 @@ class BackendController extends Controller
         $post->news = $request['news'];
         $post->is_hidden = $request['is_hidden'];
         $post->category_id = $request['category_id'];
+        $post->user_id =  Auth::user()->id;
 
         if($request->hasFile('avatar')){
 
@@ -135,6 +137,7 @@ class BackendController extends Controller
         $post->news = (is_null($request['news']) ? '0' : '1');
         $post->is_hidden = (is_null($request['is_hidden']) ? '0' : '1');
         $post->category_id = $request['category_id'];
+        $post->user_id =  Auth::user()->id;
 
 
         if ($request->hasFile('avatar')) {
