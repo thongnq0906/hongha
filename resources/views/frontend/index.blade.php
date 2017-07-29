@@ -139,10 +139,10 @@ Mở bán chung Cư Hồng Hà Eco City- Tứ Hiệp, Thanh Trì
 				<div class="title uk-text-center">  Hồng hà eco city</div>
 				<div class="shophouse-item uk-grid">
 					<div class="item uk-width-large-1-3 uk-width-medium-1-1 uk-width-small-1-1">
-						<a href="#" title="">
+						<a href="{{ url('/tin-tuc/nha-o-xa-hoi-tu-hiep-hong-ha-eco-city-36.html')}}" title="">
 							<img src="{{ asset('samples/tieu-khu/loai-hinh-nha-o-xa-hoi-chung-cu-hong-ha-eco-city.jpg') }}">
 						</a>
-						<a href="#" title="">
+						<a href="{{ url('/tin-tuc/nha-o-xa-hoi-tu-hiep-hong-ha-eco-city-36.html')}}" title="">
 							<h3>Nhà ở xã hội</h3>
 						</a>
 						<div class="cate">
@@ -150,10 +150,10 @@ Mở bán chung Cư Hồng Hà Eco City- Tứ Hiệp, Thanh Trì
 						</div>
 					</div>
 					<div class="item uk-width-large-1-3 uk-width-medium-1-1 uk-width-small-1-1">
-						<a href="#" title="">
+						<a href="{{ url('/tin-tuc/toa-nha-thuong-mai-hong-ha-eco-city-37.html')}}" title="">
 							<img src="{{ asset('samples/tieu-khu/loai-hinh-toa-nha-thuong-mai-hong-ha-eco-city.jpg') }}">
 						</a>
-						<a href="#" title="">
+						<a href="{{ url('/tin-tuc/toa-nha-thuong-mai-hong-ha-eco-city-37.html')}}" title="">
 							<h3>Tòa nhà thương mại</h3>
 						</a>
 						<div class="cate">
@@ -161,10 +161,10 @@ Mở bán chung Cư Hồng Hà Eco City- Tứ Hiệp, Thanh Trì
 						</div>
 					</div>
 					<div class="item uk-width-large-1-3 uk-width-medium-1-1 uk-width-small-1-1">
-						<a href="#" title="">
+						<a href="{{ url('/tin-tuc/trung-tam-thuong-mai-hong-ha-eco-city-35.html')}}" title="">
 							<img src="{{ asset('samples/tieu-khu/loai-hinh-trung-tam-thuong-mai.jpg') }}"/>
 						</a>
-						<a href="#" title="">
+						<a href="{{ url('/tin-tuc/trung-tam-thuong-mai-hong-ha-eco-city-35.html')}}" title="">
 							<h3>Trung tâm thương mại</h3>
 						</a>
 						<div class="cate">
