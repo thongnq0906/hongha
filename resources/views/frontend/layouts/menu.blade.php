@@ -2,7 +2,7 @@
     <div class="uk-container uk-container-center data-uk-sticky">
 
         <a class="uk-navbar-brand uk-hidden-small" href="{{ url('/')}}">
-        <img class="uk-margin uk-margin-remove" src="{{ asset('../assets/images/logo.png') }}" width="90" 
+        <img class="uk-margin uk-margin-remove" src="{{ asset('/samples/logo.png') }}" width="65" 
         height=" title= " Chung cư hồng hà eco city " alt="Chung cư hồng hà eco city" ></a>
 
         <ul class="uk-navbar-nav uk-hidden-small">
@@ -40,14 +40,14 @@
         <a href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas=""></a>
 
         <div class="uk-navbar-brand uk-navbar-center uk-visible-small"><a href="{{ url('/')}}" title=""><img
-                        src="{{ asset('../assets/images/logo.png') }}" width="90" height="30" title="logo vhr2"
-                        alt="vinhomes riverside"></a></div>
+                        src="{{ asset('/samples/logo.png') }}" width="60" height="30" title="Chung cư hồng hà eco city"
+                        alt="Chung cư hồng hà eco city"></a></div>
 
     </div>
     <div id="tm-offcanvas" class="uk-offcanvas ng-scope">
         <div class="uk-offcanvas-bar">
             <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav="">
-                <li class="my-id">
+                <li class=" uk-parent uk-active uk-open my-id my-id">
                     <a href="{{ url('/')}}">Trang chủ</a>
                 </li>
                 <?php $menu_lv1 = DB::table('categories')->where('parent_id',0)->get(); ?>
@@ -58,7 +58,7 @@
                 @else
                 {!! $item1->category !!}
                 @endif
-                <div class="menu-childen uk-dropdown uk-dropdown-navbar">
+                <div class="menu-childen">
                     <ul class="uk-nav uk-nav-navbar">
                         <?php $menu_lv2 = DB::table('categories')->where('parent_id',$item1->id)->get(); ?>
                         @foreach($menu_lv2 as $item2)

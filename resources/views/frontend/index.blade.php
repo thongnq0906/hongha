@@ -40,73 +40,66 @@ Mở bán chung Cư Hồng Hà Eco City- Tứ Hiệp, Thanh Trì
 				<div class="uk-panel">
 					<div class="title uk-text-center"> Tổng quan dự án	 </div>
 					<div class="desc ">
-						<p>Vị trí: Nằm trên địa bàn xã Tứ Hiệp, huyện Thanh Trì, thành phố Hà Nội 
-						</p>
-						<p>Chủ đầu tư: Công ty Cổ phần Tứ Hiệp Hồng Hà Dầu Khí
-						Tiện ích: Hồ bơi 500 m², nhà trẻ, phòng gym, siêu thị mini, nhà hàng, cà phê sân vườn…</p>
+						<p><b>Vị trí</b>: Nằm trên địa bàn xã Tứ Hiệp, huyện Thanh Trì, thành phố Hà Nội
+							Gồm 3 tổ hợp: Toà nhà thương mại , Nhà ở xã hội , Trung tâm thương mại </br>
+							<b>Tiện ích dự án</b>: Hồ bơi 500 m², nhà trẻ, phòng gym, siêu thị mini, nhà hàng, cà phê sân vườn…</p>
 					</div>
 					<div class="nav">
 						<div class=" uk-grid">
-							<div class="uk-width-1-2 uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 media-heading">
+							<div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1 media-heading">
 								<div class="uk-card uk-card-default uk-card-body">
 									<a class="media-left uk-width-1-6" href="#" >
-										<img src="{{ asset('samples/icon-1.png') }}">
+										<img src="samples/icon-1.png">
 									</a>
-									<div class="uk-width-5-6">Diện tích dự án:</div>
+									<div class="uk-width-5-6"><b>Diện tích dự án:</b></div>
 									16,7 ha
 								</div>
 							</div>
-							<div class="uk-width-1-2 uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 media-heading">
+							<div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1 media-heading">
 								<div class="uk-card uk-card-default uk-card-body">
 									<a class="media-left uk-width-1-6" href="#" >
-										<img src="{{ asset('samples/icon-1.png') }}">
+										<img src="samples/icon-1.png">
 									</a>
-									<div class="uk-width-5-6">Mật độ xây dựng:</div>
+									<div class="uk-width-5-6"><b>Mật độ xây dựng:</b></div>
 									30 %
 								</div>
 							</div>
-						</div>
-
-						<div class=" uk-grid">
-							<div class="uk-width-1-2 uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 media-heading">
+							<div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1 media-heading">
 								<div class="uk-card uk-card-default uk-card-body">
 									<a class="media-left uk-width-1-6" href="#">
-										<img src="{{ asset('samples/icon-1.png') }}">
+										<img src="samples/icon-1.png">
 									</a>
-									<div class="uk-width-1-1">Hạ tầng giao thông & Không gian:</div>
+									<div class="uk-width-1-1"><b>Hạ tầng giao thông & Không gian:</b></div>
 									70%
 								</div>
 							</div>
-							<div class="uk-width-1-2 uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 media-heading">
+							<div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1 media-heading">
 								<div class="uk-card uk-card-default uk-card-body">
 									<a class="media-left uk-width-1-6" href="#">
-										<img src="{{ asset('samples/icon-1.png') }}">
+										<img src="samples/icon-1.png">
 									</a>
-									<div class="uk-width-1-1">Số Block & Tầng cao:</div>
+									<div class="uk-width-1-1"><b>Số Block & Tầng cao:</b></div>
 									17 Tòa nhà từ 10 tầng đến 34 tầng
 								</div>
 							</div>
-							
-						</div>
-						<div class=" uk-grid">
-							<div class="uk-width-1-2 uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 media-heading">
+							<div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1 media-heading">
 								<div class="uk-card uk-card-default uk-card-body">
 									<a class="media-left uk-width-1-6" href="#">
-										<img src="{{ asset('samples/icon-1.png') }}">
+										<img src="samples/icon-1.png">
 									</a>
-									<div class="uk-width-1-1">Số căn hộ:</div>
+									<div class="uk-width-1-1"><b>Số căn hộ:</b></div>
 									3283 Căn
 								</div>
 							</div>
-							<div class="uk-width-1-2 uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1 media-heading">
-								<div class="uk-card uk-card-default uk-card-body">
-									<a class="media-left uk-width-1-6" href="#">
-										<img src="{{ asset('samples/icon-1.png') }}">
-									</a>
-									<div class="uk-width-1-1">Sản phẩm:</div>
-									Toà nhà thương mại, Nhà ở xã hội, Trung tâm thương mại 
-								</div>
-							</div>
+							<!--<div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1 media-heading">-->
+								<!--<div class="uk-card uk-card-default uk-card-body">-->
+									<!--<a class="media-left uk-width-1-6" href="#">-->
+										<!--<img src="samples/icon-1.png">-->
+									<!--</a>-->
+									<!--<div class="uk-width-1-1">Sản phẩm:</div>-->
+									<!--Toà nhà thương mại, Nhà ở xã hội, Trung tâm thương mại-->
+								<!--</div>-->
+							<!--</div>-->
 						</div>
 					</div>
 				</div>
@@ -205,7 +198,7 @@ Mở bán chung Cư Hồng Hà Eco City- Tứ Hiệp, Thanh Trì
 							</div>
 						</div>
                         <div class="item uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
-                            <a href="#" title="Victory Tower"><img src="{{ asset('samples/san-pham/1500437502-img-3350-fileminimizer.jpg') }}"></a>
+                            <a href="#" title="Victory Tower"><img src="{{ asset('samples/san-pham/1500437502-img-3350-fileminimizer.JPG') }}"></a>
                             <div class="cate">
                                 Giải Bóng Đá Cúp Tứ Hùng 2017
                             </div>
@@ -321,7 +314,7 @@ Mở bán chung Cư Hồng Hà Eco City- Tứ Hiệp, Thanh Trì
 								<li>
 									<span>Thanh toán 95% GTBT </span> bằng vốn tự có trong vòng <span> 15 ngày  </span> kể từ ngày ký HĐMB được hưởng mức <span> chiết khấu 9.5%/năm </span> trên số tiền và số ngày thanh toán trước hạn.
 								</li>
-								<li class="hotline"><a href="tel:0967876969" title="hotline"><i class="uk-icon-phone"></i> Hotline : 0967.87.69.69</a></li>
+								<li class="hotline"><a href="tel:0967876969" title="hotline"><i class="uk-icon-phone"></i> Hotline : 0916.0866.88</a></li>
 							</ul>
 						</div>
 					</div>
