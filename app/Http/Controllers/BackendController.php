@@ -66,7 +66,7 @@ class BackendController extends Controller
     }
 
     public function blog(){
-        $data=Category::select('id','category','parent_id')->get()->toArray();
+        $data=Category::select('*')->get()->toArray();
         $posts = Post::orderBy('hot','DESC')->orderBy('id','desc')->paginate(10);
         $categories = Category::all();
         return view('admin.blog',compact('posts','categories', 'data'));
@@ -177,7 +177,7 @@ class BackendController extends Controller
         $category->category = $request['category'];
         $category->parent_id = $request->parent_id;
         $category->description = $request['description'];
-        $category->slug = str_slug($category->category);
+        $category->slug = str_slug($category->description);
         $category->save();
         return redirect()->back();
     }
@@ -200,7 +200,7 @@ class BackendController extends Controller
         $category->category = $request['category'];
         $category->parent_id = $request->parent_id;
         $category->description = $request['description'];
-        $category->slug = str_slug($category->category);
+        $category->slug = str_slug($category->description);
         $category->save();
         return redirect()->back()->with('message','Đã thêm thành công');
     }

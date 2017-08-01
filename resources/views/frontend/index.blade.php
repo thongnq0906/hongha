@@ -110,18 +110,20 @@ Chung cư Hồng Hà Eco City - Tứ Hiệp, Thanh Trì
 			<div class="over-item uk-width-large-1-2 uk-width-medium-1-2 uk-float-left">
 				<div class="uk-panel">
 					<div class="title uk-text-center"> VỊ TRÍ CHIẾN LƯỢC</div>
-					<div class="uk-text-center"> KẾT NỐI ĐA CHIỀU</div>
 					<div class="desc uk-text-center ">
-						Khu đô thị Hồng Hà Eco City cách trung tâm thủ đô Hà Nội 8Km về phía Nam, có vị trí đắc địa về
-						Phong thủy và Môi trường sống
+						<a href="{{ url('/')}}" title="Khu đô thị mới Hồng Hà Eco City" style="color:#ffffff;">Khu đô thị mới Hồng Hà Eco City.</a> Cách trung tâm thủ đô Hà Nội 8Km về phía Nam, có vị trí đắc địa về Phong thủy và Môi trường sống.
 					</div>
 					<div class="desc uk-text-center ">
-						Khu đô thị Hồng Hà Eco City cách Công viên Yên Sở, khoảng 300m về phía Đông Bắc nơi có diện tích trên 3.000.000m2 Hồ nước và Cây xanh; Cách Đầm Trì khoảng 500m về phía Đông, có diện tích gần 1.000.000m2 mặt nước.
+						Hồng Hà Eco City cách Công viên Yên Sở, khoảng 300m về phía Đông Bắc nơi có diện tích trên 3.000.000m2 Hồ nước và Cây xanh; Cách Đầm Trì khoảng 500m về phía Đông, có diện tích gần 1.000.000m2 mặt nước.
 					</div>
 					<div class="desc uk-text-center ">
-						Liền kề dòng Sông huyết mạch của Hà Nội đem lại sự lưu thông dòng chảy và tạo nên đô thị Hồng Hà
-						Eco City nằm ở vị trí đắc địa luôn luôn cân bằng dòng nước và không bao giờ bị ngập lụt.
-						
+						Thừa hưởng không khí trong lành, mát mẻ nhờ nằm gần dòng sông Hồng huyết mạch
+					</div>
+					<div class="desc uk-text-center ">
+						Thừa hưởng hơn 3. 000.000m2 hồ nước và cây xanh từ công viên Yên Sở phía Đông Bắc, và gần 1000.000m2 mặt nước tại Đầm Trì cách dự án 500m
+					</div>
+					<div class="desc uk-text-center ">
+						Hệ thống đuờng giao thông huyết mạch, hiện đại đã được đầu tư xây dựng đồng bộ như: trục đường cao tốc Pháp Vân – Cầu Giẽ – cầu Thanh Trì, quốc lộ 1A, cao tốc trên cao Vành đai 3, đường Phạm Hùng,…
 					</div>
 
 				</div>
@@ -157,7 +159,7 @@ Chung cư Hồng Hà Eco City - Tứ Hiệp, Thanh Trì
 							<h3>Tòa nhà thương mại</h3>
 						</a>
 						<div class="cate">
-							Tổng thể dự án vẫn lấy thiên nhiên làm trọng điểm,làm lá phổi sống, tạo năng lượng xanh cho toàn bộ khu đô thị với mật độ cây xanh chiếm 70% tổng diện tích. Bắt nguồn từ ý tưởng xây dựng hệ sinh thái tự nhiên, m&oci..
+							Dự án khu đô thị Hồng Hà Eco City được xây dựng với quy mô lớn bao gồm  khu nhà ở xã hội, thương mại, văn phòng, trường tam cấp hiện đang là sản phẩm nhận được sự quan tâm của đông đảo khách hàng và nhà đầu tư. Nổi bật là nhà ở thương mại tại dự án.
 						</div>
 					</div>
 					<div class="item uk-width-large-1-3 uk-width-medium-1-1 uk-width-small-1-1">
@@ -168,7 +170,7 @@ Chung cư Hồng Hà Eco City - Tứ Hiệp, Thanh Trì
 							<h3>Trung tâm thương mại</h3>
 						</a>
 						<div class="cate">
-							Từ xa xưa đến nay, cuộc sống của loài người luôn gắn bó và không thể tách rời khỏi thiên nhiên. Thế nên, bất kể ai khi đứng trước các yếu tố tạo nên thiên nhiên (nước, cỏ cây hoa lá, …)
+							Không nằm trong phân khúc nhà ở cao cấp nhưng khu đô thị Hồng Hà Eco City vẫn được giới chuyên gia đánh giá cao và chiếm được sự quan tâm của đông đảo khách hàng hiện nay khi mang đến một công trình hiện đại...
 						</div>
 					</div>
 				</div>
@@ -210,6 +212,9 @@ Chung cư Hồng Hà Eco City - Tứ Hiệp, Thanh Trì
 			<div class="extentions uk-container uk-container-center">
 				<div class="item_extent">
 				<div class="title">Tiện ích đẳng cấp</div>
+				<p>
+					Với chuỗi tiện ích hòan hảo tại dự án <a href="{{ url('/')}}">chung cư Hồng Hà Eco City</a> không chỉ đáp ứng được mọi nhu cầu thiết yếu hàng ngày của cư dân mà còn hứa hẹn mang đến một cuộc sống đầy đủ và chất lượng, nâng tầm giá trị sống cho mọi khách hàng
+				</p>
 					<ul class="uk-nav">
 						<li><a href="{{ asset('samples/tien-ich/1499069011-carousel-4.jpg') }}" title="Bể bơi trong nhà" data-uk-lightbox="{group:'group1'}">
 							<img src="{{ asset('samples/tien-ich/1499069011-carousel-4.jpg') }}" alt="Bể bơi trong nhà">
@@ -314,7 +319,7 @@ Chung cư Hồng Hà Eco City - Tứ Hiệp, Thanh Trì
 								<li>
 									<span>Thanh toán 95% GTBT </span> bằng vốn tự có trong vòng <span> 15 ngày  </span> kể từ ngày ký HĐMB được hưởng mức <span> chiết khấu 9.5%/năm </span> trên số tiền và số ngày thanh toán trước hạn.
 								</li> -->
-								<li class="hotline"><a href="tel:0967876969" title="hotline"><i class="uk-icon-phone"></i> Hotline : 0916.0866.88</a></li>
+								<li class="hotline"><a href="tel:‎0916086688" title="hotline"><i class="uk-icon-phone"></i> Hotline : 0916.0866.88</a></li>
 							</ul>
 						</div>
 					</div>
