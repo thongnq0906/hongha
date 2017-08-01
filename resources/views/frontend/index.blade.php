@@ -1,6 +1,6 @@
 @extends('frontend.layouts.app')
 @section('title')
-Mở bán chung Cư Hồng Hà Eco City- Tứ Hiệp, Thanh Trì 
+Chung cư Hồng Hà Eco City - Tứ Hiệp, Thanh Trì
 @endsection
 @section('main')
 	

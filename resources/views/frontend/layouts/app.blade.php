@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="Dự án Chung Cư Hồng Hà Eco City do Chủ đầu tư Công ty Cổ phần Tứ Hiệp Hồng Hà phụ trách mang đến chốn an cư lý tưởng cho cư dân.">
-	<meta name="description" content="Chung Cư Hồng Hà Eco City, eco city tứ hiệp, chung cư tứ hiệp, chung cư hồng hà tứ hiệp, chung cư eco city, chung cư hồng hà, bán chung cư tứ hiệp, dự án hồng hà eco city.">
+	<meta name="description" content="Chung Cư Hồng Hà Eco City do Chủ đầu tư Công ty CP Tứ Hiệp Hồng Hà Dầu khí phụ trách tại xã Tứ Hiệp, Thanh Trì, Hà Nội.">
 	<title>@yield('title')</title>
 	<link rel="shortcut icon" href="samples/favicon.png" type="image/x-icon">
 	<link rel="apple-touch-icon-precomposed" href="samples/favicon.png">
