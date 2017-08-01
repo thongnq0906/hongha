@@ -137,8 +137,8 @@ Chung cư Hồng Hà Eco City - Tứ Hiệp, Thanh Trì
 		<!-- shophouse VHR2 -->
 		<div class="shophouse uk-container uk-conatiner-center uk-text-center">
 			<div class="">
-				<div class="title uk-text-center">  Hồng hà eco city</div>
-				<div class="shophouse-item uk-grid">
+				<div class="title uk-text-center">  Mặt Bằng Hồng Hà Eco City</div>
+				<!-- <div class="shophouse-item uk-grid">
 					<div class="item uk-width-large-1-3 uk-width-medium-1-1 uk-width-small-1-1">
 						<a href="<?php echo e(url('/tin-tuc/nha-o-xa-hoi-tu-hiep-hong-ha-eco-city-36.html')); ?>" title="">
 							<img src="<?php echo e(asset('samples/tieu-khu/loai-hinh-nha-o-xa-hoi-chung-cu-hong-ha-eco-city.jpg')); ?>">
@@ -172,9 +172,39 @@ Chung cư Hồng Hà Eco City - Tứ Hiệp, Thanh Trì
 							Không nằm trong phân khúc nhà ở cao cấp nhưng khu đô thị Hồng Hà Eco City vẫn được giới chuyên gia đánh giá cao và chiếm được sự quan tâm của đông đảo khách hàng hiện nay khi mang đến một công trình hiện đại...
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
+		<div class="extentions matbang uk-container uk-container-center">
+				<div class="item_extent">
+					<ul class="uk-nav">
+						<li><a href="<?php echo e(asset('samples/mat-bang/mat-bang-CT11-tang4-27-chung-cu-hong-ha-eco-city.jpg')); ?>" title="Mặt Bằng CT11 Tầng 4 - 27" data-uk-lightbox="{group:'group2'}">
+							<img src="<?php echo e(asset('samples/mat-bang/mat-bang-CT11-tang4-27-chung-cu-hong-ha-eco-city.jpg')); ?>" alt="Mặt Bằng CT11 Tầng 4 - 27">
+							<div class="light-text"><span>Mặt Bằng CT11 Tầng 4 - 27</span></div>
+						</a></li>
+						<li><a href="<?php echo e(asset('samples/mat-bang/mat-bang-CT12-tang3-22-chung-cu-hong-ha-eco-city.jpg')); ?>" title="CT12 Tầng 3-22" data-lightbox-type="image" data-uk-lightbox="{group:'group2'}">
+							<img src="<?php echo e(asset('samples/mat-bang/mat-bang-CT12-tang3-22-chung-cu-hong-ha-eco-city.jpg')); ?>" alt="CT12 Tầng 3-22">
+							<div class="light-text"><span>CT12 Tầng 3-22</span></div>
+						</a></li>
+						<li><a href="<?php echo e(asset('samples/mat-bang/mat-bang-CT13-tang4-17-chung-cu-hong-ha-eco-city.jpg')); ?>" title="Mặt Bằng CT13 Tầng 4-17" data-lightbox-type="image" data-uk-lightbox="{group:'group2'}">
+							<img src="<?php echo e(asset('samples/mat-bang/mat-bang-CT13-tang4-17-chung-cu-hong-ha-eco-city.jpg')); ?>" alt="Mặt Bằng CT13 Tầng 4-17">
+							<div class="light-text"><span>Mặt Bằng CT13 Tầng 4-17</span></div>
+						</a></li>
+						<li><a href="<?php echo e(asset('samples/mat-bang/mat-bang-CT14-tang-dien-hinh-3-21-chung-cu-hong-ha-eco-city.jpg')); ?>" title="Mặt Bằng CT14 Tầng Điển hình 3-21" data-lightbox-type="image" data-uk-lightbox="{group:'group2'}">
+							<img src="<?php echo e(asset('samples/mat-bang/mat-bang-CT14-tang-dien-hinh-3-21-chung-cu-hong-ha-eco-city.jpg')); ?>" alt="Mặt Bằng CT14 Tầng Điển hình 3-21">
+							<div class="light-text"><span>Mặt Bằng CT14 Tầng Điển hình 3-21</span></div>
+						</a></li>
+						<li><a href="<?php echo e(asset('samples/mat-bang/mat-bang-tang-ham-CT10-chung-cu-hong-ha-eco-city.jpg')); ?>" title="Mặt Bằng Tầng Hầm CT10" data-lightbox-type="image" data-uk-lightbox="{group:'group2'}">
+							<img src="<?php echo e(asset('samples/mat-bang/mat-bang-tang-ham-CT10-chung-cu-hong-ha-eco-city.jpg')); ?>" alt="Mặt Bằng Tầng Hầm CT10">
+							<div class="light-text"><span>Mặt Bằng Tầng Hầm CT10</span></div>
+						</a></li>
+						<li><a href="<?php echo e(asset('samples/mat-bang/mat-bang-tang-ham-CT10-chung-cu-hong-ha-eco-city.jpg')); ?>" title="Mặt Bằng Tầng Hầm CT10" data-lightbox-type="image" data-uk-lightbox="{group:'group2'}">
+							<img src="<?php echo e(asset('samples/mat-bang/mat-bang-tang-ham-CT10-chung-cu-hong-ha-eco-city.jpg')); ?>" alt="Mặt Bằng Tầng Hầm CT10">
+							<div class="light-text"><span>Mặt Bằng Tầng Hầm CT10</span></div>
+						</a></li>
+					</ul>
+				</div>
+			</div>
 		<!-- sản phẩm paragon -->
 			<div class="product-vhr ">
 				<div class="uk-container uk-container-center">
