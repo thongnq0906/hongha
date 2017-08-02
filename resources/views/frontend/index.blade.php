@@ -211,9 +211,11 @@ Chung cư Hồng Hà Eco City - Tứ Hiệp, Thanh Trì
 						@foreach($news as $n)
 						<div class="item uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
 							<a href="{{ $n->getUrl() }}" title="Victory Tower"><img src="{{ $n->avatar }}"></a>
-							<div class="cate">
-								{{ $n->post }}
-							</div>
+							<h3>
+								<div class="cate">
+									{{ $n->post }}
+								</div>
+							</h3>
 						</div>
 						@endforeach()
 					</div>
