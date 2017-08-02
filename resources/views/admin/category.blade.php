@@ -37,7 +37,7 @@
 				<input type="number" class="form-control" name="position">
 			</div>
 			{{ csrf_field() }}
-			<button type="submit" class="btn btn-default">Thêm</button>
+			<button type="submit" class="btn btn-primary">Thêm</button>
 		</form>
     
 		<table class="table">

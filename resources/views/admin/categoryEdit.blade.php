@@ -43,16 +43,16 @@
 				@endif
 				<?php  menu($data);?>
 			</select>
-			<div class="">
-                        <label>
-                            <input name="is_hidden" type="checkbox" class="js-switch"
-                                    {{($category->is_hidden)?'checked':''}}
-                            /> Ẩn bài viết
-                        </label>
-                    </div>
+			<div style="margin-top: 20px;margin-bottom: 20px;">
+                <label>
+                    <input name="is_hidden" type="checkbox" class="js-switch"
+                            {{($category->is_hidden)?'checked':''}}
+                    /> Ẩn bài viết
+                </label>
+            </div>
 			{{ csrf_field() }}
 			<input type="hidden" name="id" value="{{ $id }}">
-			<button type="submit" class="btn btn-default">Cập nhật</button>
+			<button type="submit" class="btn btn-primary">Cập nhật</button>
 		</form>
     </div>
 </div>

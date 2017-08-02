@@ -15,7 +15,7 @@ class AddIsHiddenToCategories extends Migration
     {
         Schema::table('categories', function (Blueprint $table) {
             $table->boolean('is_hidden')->default(0);
-            $table->integer('position')->unsigned()->unique();
+            $table->integer('position')->unsigned()->nullable()->unique();
         });
     }
 

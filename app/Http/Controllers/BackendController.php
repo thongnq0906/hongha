@@ -169,7 +169,7 @@ class BackendController extends Controller
 
 
     public function category(){
-        $categories = \App\Category::all();
+        $categories = \App\Category::orderBy('position','DESC')->get();
         $data=Category::select('id','category','parent_id')->get()->toArray();
         return view('admin.category',compact('categories', 'data'));
     }
@@ -200,6 +200,7 @@ class BackendController extends Controller
 
     public function updateCategory($id, EditCategoryRequest $request){
         $category = Category::findOrFail($id);
+
         $category->category = $request['category'];
         $category->parent_id = $request->parent_id;
         $category->description = $request['description'];
