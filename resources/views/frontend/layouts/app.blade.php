@@ -64,7 +64,7 @@
 			
 			'<div class="contact-form">',
 			'<div class="title"> Bảng Giá Chi Tiết Toàn Bộ Dự Án</div>',
-			'<div class="desc"> Hệ thống của chúng tôi sẽ gửi toàn bộ bảng giá chi tiết các căn Biệt thự đơn lập, song lập, liền kề, nhà phố và biệt thự nhà vườn vào email và số điện thoại cho quý khách trong vòng 1-3 phút làm việc.</div>',
+			'<div class="desc"> Hệ thống của chúng tôi sẽ gửi toàn bộ bảng giá chi tiết các tòa vào email và số điện thoại cho quý khách trong vòng 1-3 phút làm việc.</div>',
             '<form action="{{route('contact-submit')}}" method="post" accept-charset="utf-8" class="uk-form uk-tin-tuc-form"  >',
 			        '<div class="uk-width-1-1" style="padding-bottom: 0px;">',
 					    '<input type="text" name="name" placeholder="Họ tên (*)" class="uk-width-1-1" required="">',
