@@ -103,11 +103,11 @@
 						</h3>
 						<div class="">
 							<div class=" item-news video item uk-width-large-1-1 uk-width-medium-1-1 uk-width-small-1-1 ">
-							<iframe src="https://www.youtube.com/embed/QOGVa4zOtiQ?ecver=2" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+							<iframe src="https://www.youtube.com/embed/QitWpNHMBCk?ecver=2" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
 							</div>
 
 						</div>
-						<div class="" style="width: 100%;">
+						<!-- <div class="" style="width: 100%;">
 							<div class="item-video uk-grid" style="margin: 0;">
 								<div class=" item-news item uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1 ">
 								<iframe src="https://www.youtube.com/embed/eUJTDKxpkD8?ecver=2" width="100%" height="100%" frameborder="0"  allowfullscreen></iframe>
@@ -116,7 +116,7 @@
 								<iframe src="https://www.youtube.com/embed/-Et4hTGF3vQ?ecver=2" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 				</div>

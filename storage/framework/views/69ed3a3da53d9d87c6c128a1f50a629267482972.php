@@ -6,7 +6,8 @@
         height=" title= " Chung cư hồng hà eco city " alt="Chung cư hồng hà eco city" ></a>
 
         <ul class="uk-navbar-nav uk-hidden-small">
-            <?php $menu_lv1 = DB::table('categories')->where('parent_id',0)->get(); ?>
+            <?php $menu_lv1 = DB::table('categories')->where([['parent_id',0],['is_hidden',0]])
+            ->orderBy('position', 'ASC')->get(); ?>
             <?php $__currentLoopData = $menu_lv1; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item1): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <li class="" data-uk-dropdown>
                 <?php if($item1->parent_id ==0): ?>
@@ -17,10 +18,10 @@
                 <?php endif; ?>
                 <div class="menu-childen uk-dropdown uk-dropdown-navbar">
                     <ul class="uk-nav uk-nav-navbar">
-                        <?php $menu_lv2 = DB::table('categories')->where('parent_id',$item1->id)->get(); ?>
+                        <?php $menu_lv2 = DB::table('categories')->where('is_hidden', '0')->where('parent_id',$item1->id)->orderBy('position', 'ASC')->get(); ?>
                         <?php $__currentLoopData = $menu_lv2; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item2): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <li><a href="<?php echo e(route('category', ['slug' => $item2->slug])); ?>"><?php echo $item2->category; ?></a></li>
-                         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </ul>
                 </div>
             </li>
@@ -51,7 +52,7 @@
                 <li class=" uk-parent uk-active uk-open my-id my-id">
                     <a href="<?php echo e(url('/')); ?>">Trang chủ</a>
                 </li>
-                <?php $menu_lv1 = DB::table('categories')->where('parent_id',0)->get(); ?>
+                <?php $menu_lv1 = DB::table('categories')->where('is_hidden', '0')->where('parent_id',0)->orderBy('position', 'ASC')->get(); ?>
             <?php $__currentLoopData = $menu_lv1; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item1): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <li class="" data-uk-dropdown>
                 <?php if($item1->parent_id ==0): ?>
@@ -62,7 +63,7 @@
                 <?php endif; ?>
                 <div class="menu-childen">
                     <ul class="uk-nav uk-nav-navbar">
-                        <?php $menu_lv2 = DB::table('categories')->where('parent_id',$item1->id)->get(); ?>
+                        <?php $menu_lv2 = DB::table('categories')->where('is_hidden', '0')->where('parent_id',$item1->id)->orderBy('position', 'ASC')->get(); ?>
                         <?php $__currentLoopData = $menu_lv2; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item2): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <li><a href="<?php echo e(route('category', ['slug' => $item2->slug])); ?>"><?php echo $item2->category; ?></a></li>
                          <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>

@@ -207,30 +207,15 @@ Chung cư Hồng Hà Eco City - Tứ Hiệp, Thanh Trì
 				<div class="uk-container uk-container-center">
 					<div class="title">TIN TỨC & SỰ KIỆN</div>
 					<div class="item-para uk-grid">
+						<?php $__currentLoopData = $news; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $n): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
 						<div class="item uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
-							<a href="#" title="Victory Tower"><img src="<?php echo e(asset('samples/san-pham/1495858614-30-ty-dong-1425646.jpg')); ?>"></a>
+							<a href="<?php echo e($n->getUrl()); ?>" title="Victory Tower"><img src="<?php echo e($n->avatar); ?>"></a>
 							<div class="cate">
-								Gói 30 nghìn tỷ giải ngân sau ngày 31/12/2016 sẽ chịu lãi xuất thả nổi
+								<?php echo e($n->post); ?>
+
 							</div>
 						</div>
-						<div class="item uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
-							<a href="#" title="Victory Tower"><img src="<?php echo e(asset('samples/san-pham/1500259951-so-do.jpg')); ?>"></a>
-							<div class="cate">
-								Quy định những trường hợp không được đăng ký thế chấp “sổ đỏ”
-							</div>
-						</div>
-						<div class="item uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
-							<a href="#" title="Victory Tower"><img src="<?php echo e(asset('samples/san-pham/1500260153-vanh-dai.jpg')); ?>"></a>
-							<div class="cate">
-								Chỉ giới vành đai 3,5 đoạn Quốc lộ 6 đến cầu Ngọc Hồi
-							</div>
-						</div>
-                        <div class="item uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
-                            <a href="#" title="Victory Tower"><img src="<?php echo e(asset('samples/san-pham/1500437502-img-3350-fileminimizer.JPG')); ?>"></a>
-                            <div class="cate">
-                                Giải Bóng Đá Cúp Tứ Hùng 2017
-                            </div>
-                        </div>
+						<?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 					</div>
 				</div>
 			</div>

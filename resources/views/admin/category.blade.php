@@ -54,36 +54,66 @@
 				</tr>
 			</thead>
 			<tbody>
-			@foreach($categories as $category)
+			<?php $menu_lv1 = DB::table('categories')->where([['parent_id',0]])->orderBy('position', 'ASC')->get(); ?>
+		            @foreach($menu_lv1 as $item1)
 			
+				@if($item1->parent_id ==0)
 				<tr>
-				
 					
-					<td>{{$category->id}}</td>
-					<td>{{$category->category}}</td>
-					<td>{{$category->description}}</td>
-					<td>{{$category->position}}</td>
+					<td>{{$item1->id}}</td>
+					<td>{{$item1->category}}</td>
+					<td>{{$item1->description}}</td>
+					<td>{{$item1->position}}</td>
 					<td>
-						@if($category->is_hidden == 1)
+						@if($item1->is_hidden == 1)
 						<span class="label label-warning">Đang ẩn</span>
 						@else
 						<span class="label label-success">Đang hiện</span>
 						@endif
 					</td>
 					<td>
-						<a href="{{ route('edit-category',['id'=>$category->id])  }}">
+						<a href="{{ route('edit-category',['id'=>$item1->id])  }}">
 						<button class="btn btn-default	">Sửa</button>
 						</a>
 						<form action="{{ route('remove-category') }}" method="post" style="display:inline;">
-						<input type="hidden" name="id" value="{{$category->id}}">
+						<input type="hidden" name="id" value="{{$item1->id}}">
 						<button class="btn btn-danger" type="submit" onclick="return confirm_delete('are you sure delete')">Xóa</button>
 						{{ csrf_field() }}
 						</form>
 					</td>
-												
-					
-				
+						<?php $menu_lv2 = DB::table('categories')->where('parent_id',$item1->id)->orderBy('position', 'ASC')->get(); ?>
+                        @foreach($menu_lv2 as $item2)
+							<tr>
+							
+							<td>{{$item2->id}}</td>
+							<td>{{$item2->category}}</td>
+							<td>{{$item2->description}}</td>
+							<td>{{$item2->position}}</td>
+							<td>
+								@if($item2->is_hidden == 1)
+								<span class="label label-warning">Đang ẩn</span>
+								@else
+								<span class="label label-success">Đang hiện</span>
+								@endif
+							</td>
+							<td>
+								<a href="{{ route('edit-category',['id'=>$item2->id])  }}">
+								<button class="btn btn-default	">Sửa</button>
+								</a>
+								<form action="{{ route('remove-category') }}" method="post" style="display:inline;">
+								<input type="hidden" name="id" value="{{$item2->id}}">
+								<button class="btn btn-danger" type="submit" onclick="return confirm_delete('are you sure delete')">Xóa</button>
+								{{ csrf_field() }}
+								</form>
+							</td>
+							
+						
+						</tr>
+					@endforeach
 				</tr>
+					@else
+					 {!! $item1->category !!}
+                @endif							
 				
 			@endforeach
 			</tbody>

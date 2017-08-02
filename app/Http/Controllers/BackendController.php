@@ -169,7 +169,7 @@ class BackendController extends Controller
 
 
     public function category(){
-        $categories = \App\Category::orderBy('position','DESC')->get();
+        $categories = \App\Category::orderBy('position','ASC')->get();
         $data=Category::select('id','category','parent_id')->get()->toArray();
         return view('admin.category',compact('categories', 'data'));
     }
