@@ -43,7 +43,8 @@ class FrontendController extends Controller
 
     public function index(){
         $slide = Slide::All();
-        return view('frontend.index', compact('slide'));
+        $news = Post::where('is_hidden', 0)->orderBy('id', 'desc')->take(4)->get();
+        return view('frontend.index', compact('slide', 'news'));
     }
     public function shopHouse(){
     	return view('frontend.shopHouse');

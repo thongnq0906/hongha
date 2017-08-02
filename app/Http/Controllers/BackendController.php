@@ -14,6 +14,8 @@ use File;
 use Illuminate\Support\Facades\Storage;
 use App\Slide;
 use App\Http\Requests\SlideRequest;
+use App\Http\Requests\CategoryRequest;
+use App\Http\Requests\EditCategoryRequest;
 use Illuminate\Support\Facades\Auth;
 
 class BackendController extends Controller
@@ -172,12 +174,13 @@ class BackendController extends Controller
         return view('admin.category',compact('categories', 'data'));
     }
 
-    public function addCategory(Request $request){
+    public function addCategory(CategoryRequest $request){
         $category = new Category;
         $category->category = $request['category'];
         $category->parent_id = $request->parent_id;
         $category->description = $request['description'];
         $category->slug = str_slug($category->description);
+        $category->position = $request['position'];
         $category->save();
         return redirect()->back();
     }
@@ -195,14 +198,16 @@ class BackendController extends Controller
 
     }
 
-    public function updateCategory($id, Request $request){
+    public function updateCategory($id, EditCategoryRequest $request){
         $category = Category::findOrFail($id);
         $category->category = $request['category'];
         $category->parent_id = $request->parent_id;
         $category->description = $request['description'];
+        $category->position = $request['position'];
         $category->slug = str_slug($category->description);
+        $category->is_hidden = (is_null($request['is_hidden']) ? '0' : '1');
         $category->save();
-        return redirect()->back()->with('message','Đã thêm thành công');
+        return redirect()->route('category-manager')->with('message','Đã thêm thành công');
     }
 
     public function customers(){

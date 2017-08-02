@@ -6,7 +6,8 @@
         height=" title= " Chung cư hồng hà eco city " alt="Chung cư hồng hà eco city" ></a>
 
         <ul class="uk-navbar-nav uk-hidden-small">
-            <?php $menu_lv1 = DB::table('categories')->where('parent_id',0)->get(); ?>
+            <?php $menu_lv1 = DB::table('categories')->where('parent_id',0)->where('is_hidden', '0')
+            ->orderBy('position', 'ASC')->get(); ?>
             @foreach($menu_lv1 as $item1)
             <li class="" data-uk-dropdown>
                 @if($item1->parent_id ==0)
@@ -16,7 +17,7 @@
                 @endif
                 <div class="menu-childen uk-dropdown uk-dropdown-navbar">
                     <ul class="uk-nav uk-nav-navbar">
-                        <?php $menu_lv2 = DB::table('categories')->where('parent_id',$item1->id)->get(); ?>
+                        <?php $menu_lv2 = DB::table('categories')->where('is_hidden', '0')->where('parent_id',$item1->id)->orderBy('position', 'ASC')->get(); ?>
                         @foreach($menu_lv2 as $item2)
                             <li><a href="{{ route('category', ['slug' => $item2->slug]) }}">{!! $item2->category !!}</a></li>
                          @endforeach
@@ -50,7 +51,7 @@
                 <li class=" uk-parent uk-active uk-open my-id my-id">
                     <a href="{{ url('/')}}">Trang chủ</a>
                 </li>
-                <?php $menu_lv1 = DB::table('categories')->where('parent_id',0)->get(); ?>
+                <?php $menu_lv1 = DB::table('categories')->where('is_hidden', '0')->where('parent_id',0)->orderBy('position', 'ASC')->get(); ?>
             @foreach($menu_lv1 as $item1)
             <li class="" data-uk-dropdown>
                 @if($item1->parent_id ==0)
@@ -60,7 +61,7 @@
                 @endif
                 <div class="menu-childen">
                     <ul class="uk-nav uk-nav-navbar">
-                        <?php $menu_lv2 = DB::table('categories')->where('parent_id',$item1->id)->get(); ?>
+                        <?php $menu_lv2 = DB::table('categories')->where('is_hidden', '0')->where('parent_id',$item1->id)->orderBy('position', 'ASC')->get(); ?>
                         @foreach($menu_lv2 as $item2)
                             <li><a href="{{ route('category', ['slug' => $item2->slug]) }}">{!! $item2->category !!}</a></li>
                          @endforeach
