@@ -109,22 +109,19 @@ Chung cư Hồng Hà Eco City - Tứ Hiệp, Thanh Trì
 			<div class="over-item uk-width-large-1-2 uk-width-medium-1-2 uk-float-left">
 				<div class="uk-panel">
 					<div class="title uk-text-center"> VỊ TRÍ CHIẾN LƯỢC</div>
-					<div class="desc uk-text-center ">
-						<a href="<?php echo e(url('/')); ?>" title="Khu đô thị mới Hồng Hà Eco City" style="color:#ffffff;">Khu đô thị mới Hồng Hà Eco City.</a> Cách trung tâm thủ đô Hà Nội 8Km về phía Nam, có vị trí đắc địa về Phong thủy và Môi trường sống.
-					</div>
-					<div class="desc uk-text-center ">
-						Hồng Hà Eco City cách Công viên Yên Sở, khoảng 300m về phía Đông Bắc nơi có diện tích trên 3.000.000m2 Hồ nước và Cây xanh; Cách Đầm Trì khoảng 500m về phía Đông, có diện tích gần 1.000.000m2 mặt nước.
-					</div>
-					<div class="desc uk-text-center ">
-						Thừa hưởng không khí trong lành, mát mẻ nhờ nằm gần dòng sông Hồng huyết mạch
-					</div>
-					<div class="desc uk-text-center ">
-						Thừa hưởng hơn 3. 000.000m2 hồ nước và cây xanh từ công viên Yên Sở phía Đông Bắc, và gần 1000.000m2 mặt nước tại Đầm Trì cách dự án 500m
-					</div>
-					<div class="desc uk-text-center ">
-						Hệ thống đuờng giao thông huyết mạch, hiện đại đã được đầu tư xây dựng đồng bộ như: trục đường cao tốc Pháp Vân – Cầu Giẽ – cầu Thanh Trì, quốc lộ 1A, cao tốc trên cao Vành đai 3, đường Phạm Hùng,…
-					</div>
+					<div class="desc ">
+						<a href=""><b>Chung cư Hồng Hà Eco City</b></a> thuộc tổng thể khu đô thị mới Hồng Hà Eco City. Cách trung tâm thủ đô Hà Nội khoảng 8Km về phía Nam, nơi đây sở hữu trọn vẹn vị trí đắc địa về Phong thủy cũng như Môi trường sống hoàn hảo.<br><br>
 
+						Chung cư Hồng Hà Eco City được thừa hưởng không khí trong lành, mát mẻ nhờ nằm cận kề dòng sông Hồng huyết mạch cùng hơn 3.000.000m2 hồ nước và cây xanh từ công viên Yên Sở phía Đông Bắc và gần 1.000.000m2 mặt nước tại Đầm Trì cách dự án 500m. Ngự trị tại vị trí vàng nơi có hệ thống đuờng giao thông huyết mạch, hiện đại đã được đầu tư xây dựng như: trục đường cao tốc Pháp Vân – Cầu Giẽ – cầu Thanh Trì, quốc lộ 1A, đường cao tốc trên cao Vành đai 3, đường Phạm Hùng,…<br><br>
+
+						Ngoài ra, từ dự án di chuyển đến các điểm lân cận cũng rất thuận tiện:<br>
+						- Liền kề KĐT Pháp Vân, bệnh viện Nội Tiết Trung Ương<br>
+						- Cách hệ thống trường học xã Tứ Hiệp 200m<br>
+						- Cách Công viên Yên Sở 1km<br>
+						- Cách siêu thị Metro Hoàng Mai 2km<br>
+						- Cách bến xe Giáp Bát 2,5km<br>
+						- Cách KĐT Ecopark 8km<br>
+					</div>
 				</div>
 			</div>
 			<div class="img_position uk-width-large-1-2 uk-width-medium-1-2 uk-float-right">
@@ -241,9 +238,16 @@ Chung cư Hồng Hà Eco City - Tứ Hiệp, Thanh Trì
 			<div class="extentions uk-container uk-container-center">
 				<div class="item_extent">
 				<div class="title">Tiện ích đẳng cấp</div>
-				<p>
-					Với chuỗi tiện ích hòan hảo tại dự án <a href="<?php echo e(url('/')); ?>">chung cư Hồng Hà Eco City</a> không chỉ đáp ứng được mọi nhu cầu thiết yếu hàng ngày của cư dân mà còn hứa hẹn mang đến một cuộc sống đầy đủ và chất lượng, nâng tầm giá trị sống cho mọi khách hàng
-				</p>
+				<div class="desc ">
+					Với chuỗi tiện ích hòan hảo từ nội khu đến ngoại khu tại chung cư <a href="<?php echo e(url('/')); ?>">Hồng Hà Eco City</a> không chỉ đáp ứng được mọi nhu cầu thiết yếu hàng ngày của cư dân mà còn hứa hẹn mang
+					đến một cuộc sống đầy đủ và chất lượng, nâng tầm giá trị sống cho mọi khách hàng.</br>
+
+					<img src="<?php echo e(asset('samples/tien-ich/giaoduc.jpg')); ?>" alt="Tiện ích Giáo dục" style="width: 10px; height: 10px;"/>&nbsp;&nbsp;<b>Tiện ích Giáo dục</b>: Hệ thống trường học tam cấp. Ngoài ra, các tiện ích ngoại khu: Trường mầm non, tiểu học, trung học cơ sở xã Tứ Hiệp, trường THCS Chu Văn An....</br>
+					<img src="<?php echo e(asset('samples/tien-ich/yte.jpg')); ?>" alt="iện ích y tế, chăm sóc sức khỏe" style="width: 10px; height: 10px;"/>&nbsp;&nbsp;<b>Tiện ích y tế, chăm sóc sức khỏe</b> thừa hưởng các tiện ích ngoại khu như: Bệnh viện Nội tiết TW, bệnh viện Đa khoa Thanh Trì, bệnh viện đa khoa Thăng Long...</br>
+					<img src="<?php echo e(asset('samples/tien-ich/giaitri.jpg')); ?>" alt="Tiện ích vui chơi" style="width: 10px; height: 10px;"/>&nbsp;&nbsp;<b>Tiện ích vui chơi</b>: Rạp chiếu phim – Club giải trí, Club Gym- Club thẩm mỹ, Đài phun nước, Đường dạo bộ, Sân vui chơi giải trí, Công viên 6 Giác quan,...</br>
+					<img src="<?php echo e(asset('samples/tien-ich/muasam1.png')); ?>" alt="Tiện ích mua sắm" style="width: 10px; height: 10px;"/>&nbsp;&nbsp;<b>Tiện ích mua sắm</b>: Siêu thị, Trung tâm thương mại, salon, thẩm mỹ viện,... Các tiện ích ngoại khu: TTTM Thanh Trì, siêu thị Harpo Mart, siêu thị Metro Hoàng Mai, siêu thị Hoàng Mai...</br>
+					<img src="<?php echo e(asset('samples/tien-ich/xebus.png')); ?>" alt="Dịch vụ công cộng" style="width: 10px; height: 10px;;"/>&nbsp;&nbsp;<b>Dịch vụ công cộng</b>: Bến xe Nước Ngầm, Bưu điện – Chuyển phát nhanh, trung tâm Vinaphone...	</br>
+				</div>
 					<ul class="uk-nav">
 						<li><a href="<?php echo e(asset('samples/tien-ich/1499069011-carousel-4.jpg')); ?>" title="Bể bơi trong nhà" data-uk-lightbox="{group:'group1'}">
 							<img src="<?php echo e(asset('samples/tien-ich/1499069011-carousel-4.jpg')); ?>" alt="Bể bơi trong nhà">
