@@ -221,20 +221,20 @@ Chung cư Hồng Hà Eco City - Tứ Hiệp, Thanh Trì
 					<img src="<?php echo e(asset('samples/tien-ich/xebus.png')); ?>" alt="Dịch vụ công cộng" style="width: 10px; height: 10px;;"/>&nbsp;&nbsp;<b>Dịch vụ công cộng</b>: Bến xe Nước Ngầm, Bưu điện – Chuyển phát nhanh, trung tâm Vinaphone...	</br>
 				</div>
 					<ul class="uk-nav">
-						<li><a href="<?php echo e(asset('samples/tien-ich/1499069011-carousel-4.jpg')); ?>" title="Bể bơi trong nhà" data-uk-lightbox="{group:'group1'}">
-							<img src="<?php echo e(asset('samples/tien-ich/1499069011-carousel-4.jpg')); ?>" alt="Bể bơi trong nhà">
+						<li><a href="<?php echo e(asset('samples/tien-ich/tien-ich-be-boi-trong-nha-du-an-hong-ha-eco-city.jpg')); ?>" title="Bể bơi trong nhà" data-uk-lightbox="{group:'group1'}">
+							<img src="<?php echo e(asset('samples/tien-ich/tien-ich-be-boi-trong-nha-du-an-hong-ha-eco-city.jpg')); ?>" alt="Bể bơi trong nhà">
 							<div class="light-text"><span>Bể bơi trong nhà</span></div>
 						</a></li>
-                        <li><a href="<?php echo e(asset('samples/tien-ich/1499069296-carousel-1.jpg')); ?>" title="Rạp chiếu phim" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}">
-                            <img src="<?php echo e(asset('samples/tien-ich/1499069296-carousel-1.jpg')); ?>" alt="Rạp chiếu phim">
+                        <li><a href="<?php echo e(asset('samples/tien-ich/tien-ich-rap-chieu-phim-hong-ha-eco-city-tu-hiep.jpg')); ?>" title="Rạp chiếu phim" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}">
+                            <img src="<?php echo e(asset('samples/tien-ich/tien-ich-rap-chieu-phim-hong-ha-eco-city-tu-hiep.jpg')); ?>" alt="Rạp chiếu phim">
                             <div class="light-text"><span>Rạp chiếu phim</span></div>
                         </a></li>
-						<li><a href="<?php echo e(asset('samples/tien-ich/1499069310-carousel-2.jpg')); ?>" title="khu vui chơi trẻ em" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}">
-							<img src="<?php echo e(asset('samples/tien-ich/1499069310-carousel-2.jpg')); ?>" alt="khu vui chơi trẻ em">
+						<li><a href="<?php echo e(asset('samples/tien-ich/tien-ich-khu-vui-choi-eco-city-tu-hiep.jpg')); ?>" title="khu vui chơi trẻ em" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}">
+							<img src="<?php echo e(asset('samples/tien-ich/tien-ich-khu-vui-choi-eco-city-tu-hiep.jpg')); ?>" alt="khu vui chơi trẻ em">
 							<div class="light-text"><span>khu vui chơi trẻ em</span></div>
 						</a></li>
-						<li><a href="<?php echo e(asset('samples/tien-ich/1499069332-carousel-3.jpg')); ?>" title="Bể bơi ngoài trời" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}">
-							<img src="<?php echo e(asset('samples/tien-ich/1499069332-carousel-3.jpg')); ?>" alt="Bể bơi ngoài trời">
+						<li><a href="<?php echo e(asset('samples/tien-ich/tien-ich-be-boi-ngoai-troi-chung-cu-eco-city.jpg')); ?>" title="Bể bơi ngoài trời" data-lightbox-type="image" data-uk-lightbox="{group:'group1'}">
+							<img src="<?php echo e(asset('samples/tien-ich/tien-ich-be-boi-ngoai-troi-chung-cu-eco-city.jpg')); ?>" alt="Bể bơi ngoài trời">
 							<div class="light-text"><span>Bể bơi ngoài trời</span></div>
 						</a></li>
 					</ul>
