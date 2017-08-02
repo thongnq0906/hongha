@@ -11358,6 +11358,10 @@ input {
   .news-detail .contact-form .btn-send:hover {
     background-color: #0c2056;
   }
+  .position .over-item .desc {
+    padding: 0 10px;
+    text-align: justify;
+  }
   .contact {
     padding-bottom: 30px;
   }
@@ -11557,9 +11561,9 @@ input {
   }
   .extentions .item_extent ul li {
     float: left;
-    width: 47.3%;
+    width: 90%;
     margin: 4px;
-    height: 95px;
+    height: 100%;
   }
   .extentions .item_extent ul li a {
     position: relative;
@@ -11612,6 +11616,11 @@ input {
   }
   .extentions .item_extent ul li:hover .light-text {
     opacity: 0;
+  }
+  .extentions .item_extent .desc {
+    padding: 0 10px;
+    text-align: justify;
+    margin-bottom: 40px;
   }
   .matbang span {
     color: rgba(207, 0, 15, 0.67) !important;
@@ -12187,7 +12196,7 @@ input {
   }
   .extentions .item_extent ul li {
     float: left;
-    width: 32.5%;
+    width: 23.5%;
     margin: 4px;
     height: 150px;
   }
