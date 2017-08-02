@@ -80,26 +80,8 @@ Chung cư Hồng Hà Eco City - Tứ Hiệp, Thanh Trì
 									<a class="media-left uk-width-1-6" href="<?php echo e(url('/')); ?>">
 										<img src="<?php echo e(asset('samples/icon-5.png')); ?>" alt="icon hồng hà eco city">
 									</a>
-									<div class="uk-width-1-1"><b>Số Block & Tầng cao:</b></div>
-									17 Tòa nhà từ 10 tầng đến 34 tầng
-								</div>
-							</div>
-							<div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1 media-heading">
-								<div class="uk-card uk-card-default uk-card-body">
-									<a class="media-left uk-width-1-6" href="<?php echo e(url('/')); ?>">
-										<img src="<?php echo e(asset('samples/icon-1.png')); ?>" alt="icon hồng hà eco city">
-									</a>
-									<div class="uk-width-1-1"><b>Số căn hộ:</b></div>
-									3283 Căn
-								</div>
-							</div>
-							<div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1 media-heading">
-								<div class="uk-card uk-card-default uk-card-body">
-									<a class="media-left uk-width-1-6" href="<?php echo e(url('/')); ?>">
-										<img src="<?php echo e(asset('samples/icon-6.png')); ?>" alt="icon hồng hà eco city">
-									</a>
-									<div class="uk-width-1-1"><b>Số căn hộ:</b></div>
-									Toà nhà thương mại, Nhà ở xã hội, Trung tâm thương mại
+									<div class="uk-width-1-1"><b>Số tòa nhà:</b></div>
+									8 tòa nhà thương mại từ CT7- CT14
 								</div>
 							</div>
 						</div>
@@ -214,7 +196,7 @@ Chung cư Hồng Hà Eco City - Tứ Hiệp, Thanh Trì
 						<div class="item uk-width-large-1-4 uk-width-medium-1-2 uk-width-small-1-1">
 							<a href="<?php echo e($n->getUrl()); ?>" title="Victory Tower"><img src="<?php echo e($n->avatar); ?>"></a>
 							<h3>
-								<div class="cate">
+								<div class="cate" style="color: #ffffff;">
 									<?php echo e($n->post); ?>
 
 								</div>
@@ -264,7 +246,7 @@ Chung cư Hồng Hà Eco City - Tứ Hiệp, Thanh Trì
 				<div class="policy-list uk-container uk-container-center uk-grid">
 					<div class="item submit uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
 						<h2>
-							<div class="title uk-text-left"> Nhận thông tin dự án - Chính Sách Bán Hàng</div>
+							<div class="title uk-text-left">NHẬN THÔNG TIN CHUNG CƯ HỒNG HÀ ECO CITY</div>
 						</h2>
 						<?php if(Session::has('flash_message')): ?>
 						<div class="uk-alert uk-alert-success"><em> <?php echo session('flash_message'); ?></em></div>
@@ -329,7 +311,7 @@ Chung cư Hồng Hà Eco City - Tứ Hiệp, Thanh Trì
 					</div>
 					<div class="item chinh-sach uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
 						<h2>
-							<div class="title uk-text-center"> Chính sách - sự kiện</div>
+							<div class="title uk-text-center">CHÍNH SÁCH SỰ KIỆN DỰ ÁN</div>
 						</h2>
 						<div class="list-news">
 							<ul class="">
@@ -343,7 +325,7 @@ Chung cư Hồng Hà Eco City - Tứ Hiệp, Thanh Trì
 								<li>
 									<span>Thanh toán 95% GTBT </span> bằng vốn tự có trong vòng <span> 15 ngày  </span> kể từ ngày ký HĐMB được hưởng mức <span> chiết khấu 9.5%/năm </span> trên số tiền và số ngày thanh toán trước hạn.
 								</li> -->
-								<li class="hotline"><a href="tel:‎0916086688" title="hotline"><i class="uk-icon-phone"></i> Hotline : 0916.0866.88</a></li>
+								<li class="hotline"><a href="tel:0916086688" title="hotline"><i class="uk-icon-phone"></i> Hotline : 0916.08.66.88</a></li>
 							</ul>
 						</div>
 					</div>
