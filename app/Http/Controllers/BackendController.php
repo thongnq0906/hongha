@@ -49,19 +49,19 @@ class BackendController extends Controller
         //var_dump(dd($request->all()));
         $user = User::where('id',$request['id'])->first();
         $user->roles()->detach();
-        
+
         if(($request['role_user']))
         {
             $user->roles()->attach(Role::where('name','User')->first());
-        } 
+        }
         if(($request['role_author']))
         {
             $user->roles()->attach(Role::where('name','Author')->first());
-        } 
+        }
         if(($request['role_admin']))
         {
             $user->roles()->attach(Role::where('name','Admin')->first());
-        } 
+        }
 
 
         return redirect()->back();
@@ -187,6 +187,7 @@ class BackendController extends Controller
 
     public function removeCategory(Request $request){
         Category::where('id',$request['id'])->first()->delete();
+        Category::where('parent_id',$request['id'])->delete();
         return redirect()->back();
     }
 
@@ -247,7 +248,7 @@ class BackendController extends Controller
         else{
             $donlap = "";
         }
-        
+
         return view('admin.quyCanHot',compact('nhavuon','songlap','tulap','donlap'));
     }
 
@@ -255,7 +256,7 @@ class BackendController extends Controller
         $quyCanHotID = $request['id'];
         $quyCanHotContent = $request['content'];
         Storage::put('quy-can-hot/'.$quyCanHotID, $quyCanHotContent);
-        
+
         return redirect()->back()->with('message','Đã thêm thành công');
     }
 
