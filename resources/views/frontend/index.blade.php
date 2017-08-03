@@ -33,16 +33,19 @@ Chung cư Hồng Hà Eco City - Tứ Hiệp, Thanh Trì
 			<div class="over-item over-item-1 uk-width-large-1-2 uk-width-medium-1-2 uk-text-left">
 				<div class="title"> Video dự án</div>
 				<div class="videos">
-					<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fqueenland.vn%2Fvideos%2F668422243343612%2F&show_text=0" width="100%" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+					<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2F1955250248055690%2Fvideos%2F1979061009007947%2F&show_text=0" width="100%" height="400" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
 				</div>
 			</div>
 			<div class="over-item uk-width-large-1-2 uk-width-medium-1-2">
 				<div class="uk-panel">
 					<div class="title uk-text-center"> Tổng quan dự án	 </div>
 					<div class="desc ">
-						<p><b>Vị trí</b>: Nằm trên địa bàn xã Tứ Hiệp, huyện Thanh Trì, thành phố Hà Nội
-							Gồm 3 tổ hợp: Toà nhà thương mại , Nhà ở xã hội , Trung tâm thương mại </br>
-							<b>Tiện ích dự án</b>: Hồ bơi 500 m², nhà trẻ, phòng gym, siêu thị mini, nhà hàng, cà phê sân vườn…</p>
+						<p>
+							- <b>Vị trí</b>: Dự án tọa lạc tại xã Tứ Hiệp, huyện Thanh Trì, thành phố Hà Nội</br>
+							- <b>Tổng diện tích sàn xây dựng</b>: 107,031m2</br>
+							- <b>Chủ đầu tư</b>: Công ty CP Tứ Hiệp Hồng Hà Dầu Khí</br>
+							- <b>Tiện ích chung cư Hồng Hà Eco City</b>: bể bơi 500 m², nhà trẻ, phòng tập gym, siêu thị mini, nhà hàng, cà phê sân vườn, khu vui chơi trẻ em, …</br>
+						</p>
 					</div>
 					<div class="nav">
 						<div class=" uk-grid">

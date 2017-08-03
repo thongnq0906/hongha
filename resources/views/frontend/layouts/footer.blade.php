@@ -44,7 +44,7 @@
 					</ul>
 				</div>
 				<div class="item uk-width-large-1-3 uk-width-medium-1-3 uk-width-small-1-1">
-					<div class="maps">
+					<div class="maps uk-text-center">
 					<a href="https://www.facebook.com/H%E1%BB%93ng-H%C3%A0-Eco-City-1955250248055690/" title=""><img src="{{ asset('/samples/logo.png') }}"></a>
 					</div>
 				</div>
