@@ -78,7 +78,7 @@ class FrontendController extends Controller
             $post->views = 1;
         }
         else {
-            $post->views++;    
+            $post->views++;
         }
         $post->save();
     	return view('frontend.tinTucChiTiet',compact('post','newsPosts','hotPost','news'));
@@ -111,7 +111,7 @@ class FrontendController extends Controller
         else{
             $donlap = "";
         }
-        
+
         return view('frontend.quyCanHot',compact('nhavuon','songlap','tulap','donlap'));
     }
 
@@ -127,7 +127,7 @@ class FrontendController extends Controller
     }
 
     public function contactSubmit(ContactRequest $request){
-        
+
         $this->validate(request(),[
             'name' => 'required',
             'telephone' => 'required',
@@ -141,17 +141,17 @@ class FrontendController extends Controller
         //     Mail::to('thanhtamqueenland@gmail.com')->cc(['itqueenland2017@gmail.com','rubyrb88@gmail.com'])->send(new \App\Mail\NewParagonCustomer($customer));
         // } catch (\Swift_TransportException $e) {
         // }
-        
+
         try {
             Mail::to('itqueenland2017@gmail.com')->send(new \App\Mail\NewParagonCustomer($customer));
         } catch (\Swift_TransportException $e) {
         }
 
         \Session::flash('flash_message','Cảm ơn quý khách đã đăng ký thông tin. Chúng tôi sẽ liên hệ với quý khách trong thời gian sớm nhất!');
-       
+
         return redirect()->route('lien-he');
         //return view('frontend.lienHe');
-        
+
     }
 
     public function tinTucRedirect($id){
@@ -161,8 +161,9 @@ class FrontendController extends Controller
     public function getCategory($slug)
     {
         $get_cate = Category::where('slug', $slug)->first();
+        // dd($get_cate);
         $posts = Post::where('category_id',$get_cate->id)->paginate(9);
-        return view('frontend.tinTuc', compact('posts'));
+        return view('frontend.tinTuc', compact('posts', 'get_cate'));
     }
 
     public function getPage($id)
@@ -173,7 +174,7 @@ class FrontendController extends Controller
         $hotPost = Post::where([['hot',1],['is_hidden','0']])->orderBy('id', 'DESC')->limit(5)->get();
         $get_cate = Category::where('slug', $id)->first();
         $post = Post::where('category_id',$get_cate->id)->first();
-        
+
         return view('frontend.tinTucChiTiet', compact('post', 'newsPosts','news', 'hotPost'));
     }
 

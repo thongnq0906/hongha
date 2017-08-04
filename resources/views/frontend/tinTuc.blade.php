@@ -1,6 +1,10 @@
 @extends('frontend.layouts.app')
 @section('title')
-Tin tức mới nhất từ chủ đầu tư | Liên Hệ : 0967.87.69.69
+@if(@isset ($get_cate))
+    {{ $get_cate->description }}| Liên Hệ :  0916.08.66.88
+@else
+Tin tức mới nhất từ chủ đầu tư | Liên Hệ :  0916.08.66.88
+@endif
 @endsection
 @section('main')
 	<div class="uk-container uk-container-center">
@@ -16,7 +20,7 @@ Tin tức mới nhất từ chủ đầu tư | Liên Hệ : 0967.87.69.69
 		</h1>
 		<div class="uk-grid">
 
-		
+
 		@foreach($posts as $post )
 		<div class=" item-news item uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1 ">
 				<div class="news-img">
@@ -33,11 +37,11 @@ Tin tức mới nhất từ chủ đầu tư | Liên Hệ : 0967.87.69.69
 
 		@endforeach
 
-		
-		
-	
-			
-			
+
+
+
+
+
 
 		</div>
 		<!-- Pagination -->
@@ -60,9 +64,9 @@ Tin tức mới nhất từ chủ đầu tư | Liên Hệ : 0967.87.69.69
 				@endif
 
 
-			    
+
 			    @for ($i = 1; $i <= $posts->lastPage(); $i++)
-			        
+
 
 			        @if( $posts->currentPage() == $i )
 
@@ -78,7 +82,7 @@ Tin tức mới nhất từ chủ đầu tư | Liên Hệ : 0967.87.69.69
 			    @endfor
 
 			    @if ($posts->currentPage()==$posts->lastPage())
-					
+
 
 
 				@else
@@ -93,9 +97,9 @@ Tin tức mới nhất từ chủ đầu tư | Liên Hệ : 0967.87.69.69
 			    <!-- <li class="{{ ($posts->currentPage() == $posts->lastPage()) ? 'uk-disabled' : '' }}">
 			        <a href="{{ $posts->url($posts->currentPage()+1) }}" >Next</a>
 			    </li> -->
-			    
+
 			</ul>
-		@endif		
+		@endif
 
 	</div>
 		<!-- modal -->
