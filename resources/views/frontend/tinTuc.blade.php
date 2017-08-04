@@ -1,6 +1,10 @@
 @extends('frontend.layouts.app')
 @section('title')
-{{ $get_cate->description }} | Liên Hệ :  0916.08.66.88
+@if(@isset ($get_cate))
+    {{ $get_cate->description }}| Liên Hệ :  0916.08.66.88
+@else
+Tin tức mới nhất từ chủ đầu tư | Liên Hệ :  0916.08.66.88
+@endif
 @endsection
 @section('main')
 	<div class="uk-container uk-container-center">
